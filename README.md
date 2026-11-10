@@ -19,7 +19,11 @@ npm run build
 npm run preview
 ```
 
-The production build is written to `dist/`. Host its contents at a website's root path. This release uses root-relative asset URLs; a subdirectory deployment such as GitHub project Pages needs base-path adjustments before it will work correctly.
+The production build is written to `dist/`. `npm run build` targets a root-path website. `npm run build:pages` targets `/Pokemon-Medallion-Battle/`; `npm run preview:pages` previews that build locally.
+
+## Play online
+
+[Open the game on GitHub Pages](https://bhanuvenkat2308.github.io/Pokemon-Medallion-Battle/). Pushes to `main` run the tests, build the game and deploy it through GitHub Actions. The repository Pages source must be set to **GitHub Actions**.
 
 ## Version 1 features
 

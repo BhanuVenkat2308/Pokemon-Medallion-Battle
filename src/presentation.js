@@ -1,3 +1,4 @@
+import {assetUrl} from './assets.js';
 // Display names only. Battle rules remain in data.js and engine.js.
 // Documented Medallion Battle names where available; other names are adaptations.
 export const MOVE_NAMES = Object.freeze({
@@ -16,7 +17,7 @@ export const MOVE_NAMES = Object.freeze({
   150:'Psystrike',151:'Ancient Power'
 });
 export const moveName = pokemon => pokemon.moveName || MOVE_NAMES[pokemon.id];
-export const typeIcon = type => `<img class="type-icon" src="/types/${type.toLowerCase()}.png" alt="" aria-hidden="true" width="20" height="20" draggable="false"/>`;
+export const typeIcon = type => `<img class="type-icon" src="${assetUrl(`types/${type.toLowerCase()}.png`)}" alt="" aria-hidden="true" width="20" height="20" draggable="false"/>`;
 
 // Vector recreations of the documented Medallion Battle power symbols.
 // These are not extracted official assets. Colors belong to power categories.

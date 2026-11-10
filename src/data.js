@@ -1,3 +1,4 @@
+import {assetUrl} from './assets.js';
 import {EXPEDITIONS} from './raid-config.js';
 import {RAID_ROSTER} from './raid-roster.js';
 import {GYM_ROSTER} from './gym-roster.js';
@@ -69,7 +70,7 @@ export const GYMS = [
 ].map(([name,description,rating,type],id)=>({id,name,description,rating,type}));
 export const RAID_BOSSES = [144,145,146,150,151];
 export const TASKS = [{id:'play',label:'A little friendly competition',detail:'Play 3 battles',goal:3,coins:100,candy:20},{id:'win',label:'Make your mark',detail:'Win 2 battles',goal:2,coins:120,candy:20},{id:'pack',label:'A new friend awaits',detail:'Open a pack',goal:1,coins:80,candy:15},{id:'evolve',label:'Growing together',detail:'Evolve a Pokémon',goal:1,coins:150,candy:30}];
-export const ART = id=>`/pokemon/${id}.png`;
+export const ART = id=>assetUrl(`pokemon/${id}.png`);
 // Approved Candy schedule, charged against the selected destination.
 export const EVOLUTION_COST = (p,destination)=>{
  if(!p.evolution)return 0;
