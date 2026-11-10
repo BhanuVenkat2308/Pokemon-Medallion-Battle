@@ -1,0 +1,445 @@
+/* Trainer's field guide: shared five-section navigation and compact destination hubs. */
+:root{--hub-paper:#fffef9;--hub-soft:#f0f2e9;--hub-deep:#194e43;--hub-light:#bed7b9;--hub-rule:#dfe5d8;--hub-quiet:#617568;--hub-on-dark:#eff5e9;--hub-glass:#ffffff16;--hub-shadow:#183c3212;--hub-coral-soft:#f9ece4}
+.five-section-shell .topbar{height:68px}.five-section-shell .sidebar{width:220px;padding-top:28px}.five-section-shell .main-shell{margin-left:220px;width:calc(100% - 220px)}.five-section-shell .main-shell main{padding:26px 30px}.five-section-shell .brand{margin-bottom:36px}.five-section-shell .nav-item{padding:15px;font-size:13px}.five-section-shell .field-note{padding-bottom:48px}.five-section-shell .topbar{padding-inline:30px}.five-section-shell footer{padding:0 30px 16px}.five-section-shell .nav-caption{font-size:9px}.five-section-shell .page-heading h1,.hub-heading h1{font-size:30px;letter-spacing:-1px}.hub-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:22px}.hub-heading .eyebrow{color:var(--hub-quiet);font-size:9px}.hub-heading h1{margin-top:6px}.hub-heading p{color:var(--hub-quiet);font-size:12px;margin-top:7px}.hub-heading>.text-button{color:var(--hub-quiet)}
+.battle-hub-grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;grid-template-rows:minmax(240px,1fr) 218px;gap:18px}.battle-dashboard .main-shell{min-height:100dvh;display:flex;flex-direction:column}.battle-dashboard main{width:100%;flex:1;display:flex;flex-direction:column}.battle-dashboard .battle-hub{flex:1;display:flex;flex-direction:column}.battle-dashboard .battle-hub-grid{flex:1;max-height:640px}.arena-feature{background:var(--hub-deep);border-radius:16px;position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;color:var(--hub-on-dark)}.arena-feature:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 100% 0,var(--hub-glass),transparent 65%)}.arena-feature-copy{padding:28px 28px 20px;position:relative;z-index:2;width:70%;pointer-events:none}.arena-feature-copy button{pointer-events:auto}.arena-feature .hero-badge{font-size:8px;letter-spacing:1.4px;padding:6px 10px}.arena-feature h2{font-size:clamp(29px,2.6vw,44px);line-height:1.06;letter-spacing:-1.2px;margin:17px 0 10px}.arena-feature h2 em{color:var(--hub-light);font-style:normal}.arena-feature-copy p{font-size:11px;color:var(--hub-light);margin-bottom:19px}.arena-feature-copy .button{min-height:42px;font-size:12px}.arena-reward{display:block;font-size:7px;letter-spacing:.8px;margin-top:13px;color:var(--hub-light)}.arena-reward i{margin:0 5px;font-style:normal}.arena-feature-art{position:absolute;right:0;top:0;width:46%;height:calc(100% - 74px);display:grid;place-items:center;pointer-events:none}.arena-feature-art>img{position:relative;z-index:1;width:115%;max-height:115%;object-fit:contain;filter:drop-shadow(0 15px 20px var(--hub-shadow));transform:translate(1%,-1%) rotate(-5deg)}.arena-orbit{position:absolute;width:78%;aspect-ratio:1;border:1px solid var(--hub-glass);border-radius:50%}.arena-orbit.second{width:95%}.arena-art-caption{position:absolute;right:22px;bottom:12px;font-size:7px;letter-spacing:2px;color:var(--hub-light)}.arena-progress{padding:15px 24px;display:flex;gap:24px;align-items:center;background:var(--hub-glass);z-index:3}.arena-progress>div:first-child{min-width:145px}.arena-progress .eyebrow{font-size:7px;letter-spacing:1.3px;color:var(--hub-light);display:block}.arena-progress b{font-size:12px;font-weight:500;display:block;margin-top:2px}.arena-progress-meter{flex:1;min-width:70px}.arena-progress-meter>div:first-child{display:flex;justify-content:space-between;font-size:10px;margin-bottom:7px}.arena-progress-meter span,.arena-progress small{color:var(--hub-light);font-size:8px}.arena-progress .progress{height:3px;background:var(--hub-glass)}.arena-progress .progress i{background:var(--hub-light)}.arena-progress .icon-button{color:var(--hub-on-dark);width:24px;height:24px}
+.discovery-feature{background:var(--hub-soft);border:1px solid var(--hub-rule);border-radius:16px;padding:22px;display:flex;flex-direction:column;text-align:center;align-items:center;justify-content:center}.discovery-top{display:flex;justify-content:space-between;width:100%;align-items:center;margin-bottom:auto}.discovery-top .eyebrow{font-size:8px;color:var(--hub-quiet)}.discovery-art{position:relative;margin:12px auto 14px;min-height:100px;display:grid;place-items:center}.mini-pack{width:90px;height:128px;border-radius:5px 5px 10px 10px;background:var(--green);color:var(--paper);box-shadow:8px 8px 0 var(--hub-shadow),inset 0 7px 0 var(--hub-glass),inset 0 -7px 0 var(--hub-glass);border:1px solid var(--hub-glass);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;transform:rotate(-8deg)}.mini-pack>span:first-child{font:700 8px var(--display);letter-spacing:1.5px}.mini-pack>.pack-pokeball{width:34px;height:34px;margin:0;border-width:2px;flex-shrink:0}.mini-pack>.pack-pokeball:before{height:2px;top:14px}.mini-pack>.pack-pokeball:after{width:10px;height:10px;top:10px;left:10px;border-width:2px}.mini-pack b{font:600 12px/1.05 var(--display);letter-spacing:.8px;text-align:center}.mini-pack small{font-size:5px;letter-spacing:1px}.discovery-art>i{position:absolute;color:var(--coral);font-size:22px;right:-26px;top:18px;font-style:normal}.discovery-feature h2{font-size:21px;letter-spacing:-.6px}.discovery-feature p{font-size:11px;color:var(--hub-quiet);margin:5px 0 12px}.discovery-feature .button{min-height:39px;font-size:11px}.discovery-feature .daily-clock{margin:10px 0 0;font-size:9px;justify-content:center;color:var(--hub-quiet)}
+.squad-feature{border:1px solid var(--hub-rule);background:var(--hub-paper);border-radius:16px;padding:18px 24px 12px;min-width:0;display:flex;flex-direction:column}.squad-feature .section-header{margin:0 0 9px;align-items:center}.squad-feature .eyebrow{font-size:7px;color:var(--hub-quiet)}.squad-feature h2{font-size:21px;letter-spacing:-.5px}.squad-feature .team-row{flex:1;gap:10px;align-items:center;justify-content:space-between;padding:0;margin:0}.squad-feature .medallion{min-width:0;width:calc((100% - 50px)/6);padding:0}.squad-feature .coin{width:min(100%,86px)}.squad-feature .med-name{font-size:10px;margin-top:5px}.squad-feature .med-power{font-size:7px;line-height:1.2;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}.squad-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--hub-rule);margin-top:10px;padding-top:8px;gap:10px;font-size:9px;color:var(--hub-quiet)}.squad-foot>span{display:flex;gap:4px;align-items:center}.squad-foot strong{color:var(--ink);font-size:12px}.squad-foot small{font-size:7px;letter-spacing:.6px;font-weight:500}.squad-warning{color:var(--coral-hover)}.practice-feature{position:relative;border:1px solid var(--hub-rule);border-radius:16px;padding:24px 22px;background:var(--hub-paper);display:flex;flex-direction:column;justify-content:center}.practice-feature .eyebrow{font-size:7px;color:var(--hub-quiet);padding-right:25px}.practice-feature h2{font-size:23px;margin:9px 0;letter-spacing:-.6px}.practice-feature p{font-size:11px;color:var(--hub-quiet)}.practice-feature .text-button{align-self:flex-start;margin-top:13px;font-size:11px}.practice-icon{position:absolute;right:18px;top:21px;color:var(--hub-quiet);opacity:.55}.trainer-strip{display:flex;gap:28px;align-items:center;padding:18px 3px 0;color:var(--hub-quiet);font-size:10px}.trainer-strip>span,.trainer-strip>button{display:flex;gap:7px;align-items:center;padding:0;font-size:10px;white-space:nowrap}.trainer-strip b{font-size:13px;color:var(--ink)}.trainer-strip small{font-size:9px;color:var(--hub-quiet);font-weight:400}.trainer-strip .trainer-expedition{margin-left:auto;font-weight:600;color:var(--ink)}
+.gym-trail{border:1px solid var(--hub-rule);border-radius:16px;background:var(--hub-paper);padding:26px;margin:24px 0}.gym-trail-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}.gym-trail-heading .eyebrow{font-size:8px;color:var(--hub-quiet)}.gym-trail h2{font-size:26px;margin-top:4px}.gym-trail-heading p{font-size:11px;color:var(--hub-quiet);margin-top:6px}.trail-tally{display:flex;flex-direction:column;align-items:flex-end;white-space:nowrap}.trail-tally>b{font:500 38px/1 var(--display);letter-spacing:-1.5px}.trail-tally small{font-size:18px;color:var(--hub-quiet);margin-left:4px}.trail-tally>span{font-size:7px;letter-spacing:1.1px;margin-top:8px;color:var(--hub-quiet)}.badge-trail{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));margin-top:26px;align-items:start}.trail-stop{position:relative;text-align:center;min-width:0}.trail-stop:before{content:'';position:absolute;top:49px;left:50%;width:100%;border-top:1px dashed var(--hub-rule)}.trail-stop:last-child:before{display:none}.trail-stop summary{list-style:none;cursor:pointer;position:relative;display:flex;flex-direction:column;align-items:center;gap:5px;padding:0 4px}.trail-stop summary::-webkit-details-marker{display:none}.trail-stop summary:focus-visible{outline:2px solid var(--coral);outline-offset:4px;border-radius:8px}.trail-index{font-size:8px;letter-spacing:1px;color:var(--hub-quiet);margin-bottom:5px}.trail-seal{display:grid;place-items:center;width:48px;height:54px;background:var(--hub-soft);border:1px solid var(--hub-rule);border-radius:40% 40% 48% 48%;position:relative;box-shadow:inset 0 0 0 4px var(--hub-paper);margin-bottom:9px}.trail-seal .type-icon{width:23px;height:23px;opacity:.6;filter:grayscale(1)}.trail-seal i{position:absolute;right:-4px;bottom:0;background:var(--green);color:var(--white);border:2px solid var(--hub-paper);border-radius:50%;width:18px;height:18px;display:grid;place-items:center}.earned .trail-seal,.current .trail-seal{background:color-mix(in srgb,var(--badge-color) 18%,var(--hub-paper));border-color:var(--badge-color)}.earned .type-icon,.current .type-icon{filter:none;opacity:1}.current .trail-seal{outline:2px solid var(--coral);outline-offset:4px}.trail-name{font:500 10px/1.3 var(--display);min-height:27px;max-width:90px}.trail-rp{font-size:8px;color:var(--hub-quiet)}.trail-status{font-size:7px;letter-spacing:.3px;color:var(--hub-quiet);margin-top:2px}.current .trail-status{color:var(--coral-hover);font-weight:700}.trail-stop>p{font-size:9px;color:var(--hub-quiet);line-height:1.5;margin:8px 4px 0}.trail-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--hub-rule);padding-top:16px;margin-top:22px;font-size:10px;color:var(--hub-quiet)}.trail-footer i{font-style:normal;margin:0 8px}.five-section-shell .raid-hero{min-height:280px;padding:25px 30px}.five-section-shell .raid-content h2{font-size:38px;margin:14px 0}.five-section-shell .raid-content>p{font-size:11px}.five-section-shell .raid-hp{margin:16px 0;width:320px;max-width:100%}.five-section-shell .raid-content .hero-badge{font-size:8px}.five-section-shell .raid-content>small{font-size:9px}.five-section-shell .raid-content .button{min-height:40px}.five-section-shell .raid-boss{height:95%;width:40%;top:0;right:5%}.five-section-shell .raid-locked{margin-top:0}.raid-handbook .raid-rules{margin-top:20px}.five-section-shell .raid-reward-panel{margin:18px 0}.five-section-shell .raid-reward-panel p{font-size:12px}.five-section-shell .raid-pool-card{padding:10px}.five-section-shell .raid-pool-card img{width:74px;height:74px}
+.shop-bag-count{font:500 22px var(--display);text-align:right;white-space:nowrap}.shop-bag-count small{display:block;color:var(--hub-quiet);font:500 7px var(--body);letter-spacing:1.4px;margin-top:5px}.shop-hub-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.85fr);gap:22px;align-items:start}.pack-counter,.research-counter{background:var(--hub-paper);border:1px solid var(--hub-rule);border-radius:16px;padding:24px;min-width:0}.pack-counter .section-header,.research-counter .section-header{margin:0 0 20px;gap:12px}.pack-counter .eyebrow,.research-counter .eyebrow{font-size:8px;color:var(--hub-quiet)}.pack-counter h2,.research-counter h2{font-size:24px;margin-top:5px}.pack-counter .tag{font-size:8px;white-space:nowrap}.counter-pack{display:flex;gap:24px;padding:22px 0;border-top:1px solid var(--hub-rule);align-items:center}.counter-pack-art{background:var(--hub-coral-soft);border-radius:12px;min-width:135px;min-height:174px;display:grid;place-items:center}.counter-pack.silver .counter-pack-art{background:var(--hub-soft)}.mini-pack.poke{background:var(--coral-hover)}.mini-pack.silver{background:var(--green);transform:rotate(7deg)}.counter-pack-copy .eyebrow{font-size:7px}.counter-pack-copy h3{font-size:25px;margin:5px 0 9px}.counter-pack-copy p{font-size:11px;color:var(--hub-quiet);line-height:1.7;max-width:290px}.pack-traits{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.pack-traits span{font-size:9px;border:1px solid var(--hub-rule);padding:4px 7px;border-radius:5px;color:var(--hub-quiet)}.counter-pack-copy .button{font-size:11px;min-height:39px;padding:10px 15px}.counter-daily{display:flex;align-items:center;gap:12px;background:var(--hub-soft);border-radius:10px;padding:15px;margin-top:4px}.counter-daily b{font:500 16px var(--display)}.counter-daily p{font-size:10px;color:var(--hub-quiet);margin-top:3px}.counter-daily .button{margin-left:auto;font-size:10px;min-height:34px;padding:8px 10px}.counter-daily .daily-clock{margin:6px 0 0;font-size:8px;color:var(--hub-quiet)}.daily-gift-icon{color:var(--green)}.research-counter{background:var(--hub-soft)}.research-counter .section-header{margin-bottom:12px}.research-ready{font-size:9px;background:var(--green);color:var(--paper);border-radius:20px;padding:6px 10px;white-space:nowrap}.research-intro{font-size:11px;color:var(--hub-quiet);margin-bottom:20px}.research-task{display:flex;gap:12px;border-top:1px solid var(--hub-rule);padding:18px 0}.research-icon{width:34px;height:34px;border:1px solid var(--hub-rule);background:var(--hub-paper);display:grid;place-items:center;border-radius:50%;flex-shrink:0}.research-copy{flex:1;min-width:0}.research-copy h3{font-size:16px;letter-spacing:-.2px}.research-copy>p{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:var(--hub-quiet);margin:6px 0 9px}.research-copy .progress{height:3px;background:var(--hub-rule)}.research-reward{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:7px;font-size:10px}.research-reward i{font-style:normal;color:var(--hub-quiet);margin-left:5px}.research-reward .text-button{font-size:9px;padding:4px 0}.research-task.ready .research-icon{background:var(--green);color:var(--paper)}.research-task.claimed .research-icon{background:var(--hub-light);border-color:var(--hub-light)}.research-note{display:flex;align-items:center;gap:12px;color:var(--hub-quiet);border-top:1px solid var(--hub-rule);padding-top:14px;font-size:10px}.research-note .text-button{font-size:10px;padding:2px 0}.shop-guide{border-top:1px solid var(--hub-rule);margin-top:24px;padding-top:18px}.shop-guide>summary{display:flex;align-items:center;gap:16px;list-style:none;cursor:pointer;font:500 18px var(--display)}.shop-guide summary::-webkit-details-marker{display:none}.shop-guide>summary small{margin-left:auto;font:400 11px var(--body);color:var(--hub-quiet)}.shop-guide[open]>summary svg{transform:rotate(90deg)}.shop-guide-copy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:24px 0}.shop-guide-copy p{font-size:11px;color:var(--hub-quiet)}
+@media(min-width:1101px) and (max-height:880px){.battle-dashboard .topbar{height:58px}.battle-dashboard .main-shell main{padding:20px 26px}.battle-dashboard .hub-heading{margin-bottom:16px}.battle-dashboard .hub-heading h1{font-size:27px}.battle-dashboard .hub-heading p{margin-top:4px}.battle-hub-grid{grid-template-rows:minmax(220px,1fr) 195px;gap:14px}.arena-feature-copy{padding:20px 24px 15px}.arena-feature h2{font-size:33px;margin:12px 0 8px}.arena-feature-copy p{margin-bottom:13px}.arena-reward{margin-top:9px}.arena-progress{padding:12px 20px}.discovery-feature{padding:16px 20px}.discovery-art{margin:8px auto;min-height:80px}.discovery-art .mini-pack{width:66px;height:94px;gap:6px}.discovery-art .mini-pack b{font-size:9px}.discovery-art .mini-pack .pack-pokeball{width:26px;height:26px}.discovery-art .mini-pack .pack-pokeball:before{top:10px}.discovery-art .mini-pack .pack-pokeball:after{top:6px;left:6px}.discovery-feature h2{font-size:19px}.discovery-feature p{margin-bottom:8px}.squad-feature{padding:13px 20px 10px}.squad-feature .coin{width:min(100%,72px)}.squad-feature .section-header{margin-bottom:6px}.squad-feature h2{font-size:20px}.squad-foot{margin-top:7px;padding-top:6px}.practice-feature{padding:20px}.practice-feature h2{font-size:22px}.trainer-strip{padding-top:13px}.battle-dashboard footer{padding-bottom:12px}}
+@media(max-width:1200px) and (min-width:901px){.five-section-shell .sidebar{width:190px;padding-inline:14px}.five-section-shell .main-shell{margin-left:190px;width:calc(100% - 190px)}.five-section-shell .brand strong{font-size:18px}.five-section-shell .brand small{font-size:6px}.five-section-shell .main-shell main{padding:22px}.battle-hub-grid{grid-template-columns:minmax(0,1fr) 225px}.arena-feature h2{font-size:31px}.arena-feature-copy{width:78%;padding:24px}.arena-progress{gap:12px}.arena-progress>div:first-child{min-width:125px}.shop-hub-grid{gap:16px;grid-template-columns:1fr 340px}.pack-counter,.research-counter{padding:20px}.counter-pack{gap:16px}.counter-pack-art{min-width:98px}.counter-pack-copy h3{font-size:22px}.badge-trail{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:24px}.trail-stop:nth-child(6):before{display:none}}
+@media(max-width:900px){.five-section-shell .sidebar{width:76px;padding:22px 10px}.five-section-shell .main-shell{margin-left:76px;width:calc(100% - 76px)}.five-section-shell .main-shell main{padding:24px}.five-section-shell .nav-item{padding:14px;justify-content:center}.five-section-shell .brand{margin:0 auto 30px;justify-content:center}.five-section-shell .brand>span:last-child,.five-section-shell .nav-item>span,.five-section-shell .nav-item>small,.five-section-shell .nav-caption,.five-section-shell .field-note,.five-section-shell .profile{display:none}.five-section-shell .nav-item .nav-dot{display:none}.five-section-shell .sidebar-bottom{padding-top:20px}.five-section-shell .topbar{padding-inline:24px}.battle-hub-grid{grid-template-columns:minmax(0,1fr) 220px;grid-template-rows:auto 210px;gap:14px}.battle-dashboard .battle-hub-grid{max-height:none;flex:0}.battle-dashboard main{flex:0}.arena-feature-copy{width:100%;padding:24px}.arena-feature h2{font-size:31px}.arena-feature-art{opacity:.38;right:-13%;width:60%}.arena-progress{padding:14px 20px;gap:12px}.arena-progress>div:first-child{min-width:110px}.arena-progress b{font-size:10px}.arena-progress-meter span{display:none}.squad-feature{grid-column:1 / -1;grid-row:2;padding:16px 22px}.practice-feature{grid-column:1 / -1;grid-row:3;padding:20px 22px;display:grid;grid-template-columns:1fr auto;gap:4px 20px}.practice-feature .eyebrow{grid-column:1}.practice-feature h2{margin:3px 0;font-size:22px}.practice-feature p{grid-column:1}.practice-feature p br{display:none}.practice-feature .text-button{grid-column:2;grid-row:1 / 4;align-self:center;margin:0}.practice-icon{display:none}.trainer-strip{gap:18px;flex-wrap:wrap;padding-top:18px}.trainer-strip .trainer-expedition{display:none}.discovery-feature{padding:20px 16px}.discovery-feature h2{font-size:19px}.hub-heading h1{font-size:27px}.hub-heading>.text-button{font-size:10px}.badge-trail{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:24px}.trail-stop:nth-child(6):before{display:none}.shop-hub-grid{grid-template-columns:1fr}.pack-counter{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.pack-counter>.section-header,.counter-daily{grid-column:1 / -1}.counter-pack{flex-direction:column;align-items:flex-start;gap:16px;padding:20px 0}.counter-pack-art{width:100%;min-height:174px}.counter-pack-copy p{max-width:none}.counter-pack-copy .button{width:100%}.research-list{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.research-note{margin-top:8px}.shop-guide-copy{grid-template-columns:1fr;gap:12px}.gym-trail h2{font-size:24px}}
+@media(max-width:600px){.five-section-shell .sidebar{position:fixed;top:auto;bottom:0;left:0;right:0;inset:auto 0 0;width:100%;height:68px;padding:0;background:var(--hub-paper);border-top:1px solid var(--hub-rule);overflow:visible}.five-section-shell .sidebar .brand,.five-section-shell .sidebar-bottom{display:none}.five-section-shell .sidebar nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;height:100%;gap:0;padding:5px 3px}.five-section-shell .sidebar .nav-item{display:flex;flex-direction:column;justify-content:center;gap:5px;padding:7px 2px;margin:0;font-size:9px;border-radius:8px}.five-section-shell .sidebar .nav-item>span:not(.nav-dot){display:block}.five-section-shell .sidebar .nav-item svg{width:19px;height:19px}.five-section-shell .sidebar .nav-item.active{background:var(--hub-soft);color:var(--green);box-shadow:none}.five-section-shell .main-shell{margin-left:0;width:100%;padding-bottom:68px}.five-section-shell .topbar{height:58px;padding:0 16px}.five-section-shell .main-shell main{padding:22px 16px}.five-section-shell footer{padding:0 16px 16px;font-size:8px;flex-wrap:wrap}.hub-heading{gap:12px;margin-bottom:20px}.hub-heading h1{font-size:26px;line-height:1.1;max-width:290px}.hub-heading p{font-size:11px;margin-top:8px}.hub-heading .eyebrow{font-size:7px}.hub-heading>.text-button{font-size:0;padding:8px}.hub-heading>.text-button svg{width:20px;height:20px}.battle-hub-grid{grid-template-columns:1fr;grid-template-rows:auto;gap:14px}.arena-feature{grid-column:1;grid-row:1}.arena-feature-copy{padding:25px 22px;min-height:251px}.arena-feature h2{font-size:34px;max-width:300px}.arena-feature-copy p{max-width:210px;font-size:11px}.arena-feature-art{width:55%;right:-16%;opacity:.35}.arena-feature .hero-badge{font-size:7px}.arena-feature .arena-progress{padding:14px 20px}.arena-progress-meter span{display:block}.squad-feature{grid-column:1;grid-row:2;padding:18px 16px 12px}.squad-feature .section-header{margin-bottom:17px}.squad-feature .section-header .text-button{font-size:10px}.squad-feature .team-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 12px}.squad-feature .medallion{width:100%}.squad-feature .coin{width:76px}.squad-feature .med-name{font-size:11px}.squad-feature .med-power{font-size:8px}.squad-foot{margin-top:15px;padding-top:12px;font-size:9px}.squad-foot small{font-size:6px}.practice-feature{grid-column:1;grid-row:3;padding:20px;display:flex;gap:0}.practice-feature h2{margin:9px 0;font-size:23px}.practice-feature p{font-size:12px}.practice-feature .text-button{margin-top:15px;align-self:flex-start}.practice-icon{display:block}.discovery-feature{grid-column:1;grid-row:4;display:grid;grid-template-columns:86px 1fr;gap:0 14px;padding:20px;text-align:left;align-items:center}.discovery-top{grid-column:1 / -1;margin-bottom:15px}.discovery-art{grid-row:2 / 5;margin:0;min-height:112px}.discovery-art .mini-pack{width:64px;height:98px;gap:6px}.discovery-art .mini-pack b{font-size:9px}.discovery-art>i{right:-4px;font-size:16px;top:-5px}.discovery-feature h2{font-size:20px}.discovery-feature p{font-size:10px;margin:6px 0 12px}.discovery-feature .daily-clock{grid-column:1 / -1;margin-top:16px;justify-content:center;font-size:10px}.trainer-strip{justify-content:space-between;gap:10px;font-size:9px}.trainer-strip>span,.trainer-strip>button{font-size:9px;gap:5px}.trainer-strip b{font-size:12px}.trainer-strip svg{width:14px;height:14px}.gym-trail{padding:22px 17px;margin:18px 0}.gym-trail-heading{align-items:flex-start;gap:14px}.gym-trail h2{font-size:23px;line-height:1.1}.gym-trail-heading p{font-size:10px;max-width:220px}.trail-tally>b{font-size:30px}.trail-tally small{font-size:15px}.trail-tally>span{font-size:5px;letter-spacing:.5px}.badge-trail{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 4px;margin-top:28px}.trail-stop:nth-child(3n):before{display:none}.trail-name{font-size:12px;min-height:31px}.trail-rp{font-size:9px}.trail-status{font-size:8px}.trail-stop>p{font-size:10px}.trail-seal{width:52px;height:58px}.trail-stop:before{top:51px}.trail-footer{flex-direction:column;align-items:flex-start;gap:4px}.trail-footer .text-button{font-size:11px}.five-section-shell .raid-hero{padding:22px;display:flex;flex-direction:column}.five-section-shell .raid-boss{position:static;width:150px;height:140px;order:-1;align-self:center;opacity:1;margin:0 auto 12px}.five-section-shell .raid-content h2{font-size:34px}.five-section-shell .raid-content>p{font-size:12px}.five-section-shell .raid-hp{width:100%;padding:12px}.five-section-shell .raid-content .button{min-height:44px}.five-section-shell .raid-reward-panel{padding:20px 17px}.five-section-shell .raid-reward-panel p{font-size:12px}.shop-bag-count{font-size:17px}.shop-bag-count small{font-size:6px}.pack-counter,.research-counter{padding:20px 17px}.pack-counter{display:block}.pack-counter .section-header{flex-wrap:wrap;gap:10px}.pack-counter h2,.research-counter h2{font-size:23px}.counter-pack{flex-direction:row;gap:17px;align-items:center}.counter-pack-art{width:90px;min-width:90px;min-height:160px}.counter-pack-art .mini-pack{width:65px;height:106px;gap:7px}.counter-pack-art .mini-pack b{font-size:10px}.counter-pack-copy h3{font-size:21px}.counter-pack-copy p{font-size:10px}.counter-pack-copy .eyebrow{font-size:6px;letter-spacing:.8px}.pack-traits{gap:4px;margin:9px 0}.pack-traits span{font-size:8px;padding:4px}.counter-pack-copy .button{font-size:10px;padding:10px;min-height:40px}.counter-daily{flex-wrap:wrap;padding:15px;gap:10px}.counter-daily .button{width:100%;margin-top:3px}.counter-daily .daily-clock{font-size:9px}.research-list{display:block}.research-copy h3{font-size:17px}.research-task{padding:20px 0}.research-copy>p,.research-reward{font-size:11px}.research-reward .text-button{font-size:10px}.shop-guide>summary{flex-wrap:wrap;font-size:17px;gap:8px}.shop-guide>summary small{order:3;width:100%;margin:0;font-size:10px}.shop-guide>summary svg{margin-left:auto}.shop-guide .milestone-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.five-section-shell .sidebar .nav-item>span:not(.nav-dot){font-size:9px}.five-section-shell .sidebar .nav-item>span:after{content:none}}
+.squad-feature .medallion{width:100%}.arena-feature-art{overflow:hidden}.arena-feature-art>img{width:100%;height:100%;max-height:100%;transform:rotate(-5deg)}
+@media(min-width:1101px) and (max-height:740px){.battle-dashboard .main-shell main{padding:16px 26px}.battle-dashboard .hub-heading p{display:none}.battle-dashboard .hub-heading{margin-bottom:12px}.battle-dashboard .sidebar .field-note{display:none}.battle-dashboard .sidebar-bottom{padding-top:12px}}
+.squad-feature .team-row{min-height:0}.squad-feature .medallion .coin{width:min(100%,78px);margin-bottom:7px}.squad-feature .med-name{margin-top:3px;line-height:1.2}.squad-foot{flex-shrink:0}.squad-feature .medallion{line-height:1.2}
+@media(min-width:1101px) and (max-height:880px){.squad-feature .medallion .coin{width:min(100%,66px)}}
+@media(max-width:600px){.squad-feature .medallion .coin{width:76px;margin-bottom:9px}}
+@media(min-width:601px) and (max-height:880px){.five-section-shell .field-note{display:none}}
+@media(max-width:600px){.research-reward .text-button{min-height:40px}}
+
+@media (min-width: 901px) {
+  .battle-hub-grid {
+    grid-template-rows: minmax(220px, 1fr) auto;
+  }
+  .squad-feature .team-row {
+    flex: 0 0 auto;
+    margin-block: auto;
+
+    width: 100%;
+    max-width: 744px;
+    align-self: center;
+    gap: 5px;
+  }
+  .squad-feature .medallion .coin {
+    width: min(94%, 108px);
+  }
+}
+@media (min-width: 1101px) and (max-height: 880px) {
+  .squad-feature .team-row { max-width: 660px; }
+  .squad-feature .medallion .coin { width: min(94%, 94px); }
+}
+@media (min-width: 901px) {
+  .squad-feature .section-header .text-button { padding-block: 4px; }
+  .squad-feature .section-header .eyebrow { margin: 0; }
+  .battle-dashboard .hub-heading { margin-bottom: 10px; }
+}
+@media (min-width: 1101px) and (max-height: 740px) {
+  .battle-dashboard .main-shell main { padding-block: 10px; }
+}
+
+/* Phone Battle uses the same four cards, with the two side cards paired below the team. */
+@media (max-width: 600px) {
+  .battle-dashboard .main-shell main { padding: 14px 12px; }
+  .battle-hub .hub-heading { margin-bottom: 12px; }
+  .battle-hub .hub-heading h1 { font-size: 23px; }
+  .battle-hub .hub-heading p { margin-top: 4px; }
+  .battle-hub-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "arena arena" "squad squad" "discovery practice";
+    gap: 9px;
+  }
+  .arena-feature { grid-area: arena; }
+  .arena-feature-copy { width: 62%; min-height: 0; padding: 15px; }
+  .arena-feature h2 { font-size: clamp(20px, 5.4vw, 30px); margin: 8px 0; }
+  .arena-feature-copy p { font-size: 10px; margin-bottom: 9px; }
+  .arena-feature-copy .button { min-height: 34px; padding: 7px 12px; }
+  .arena-reward { margin-top: 8px; }
+  .arena-feature-art { right: 0; width: 41%; height: calc(100% - 46px); opacity: 1; }
+  .arena-art-caption { right: 10px; bottom: 5px; }
+  .arena-feature .arena-progress { padding: 8px 14px; }
+  .squad-feature { grid-area: squad; padding: 10px; }
+  .squad-feature .section-header { margin-bottom: 6px; }
+  .squad-feature .team-row { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 3px; }
+  .squad-feature .medallion .coin { width: min(95%, 76px); margin-bottom: 5px; }
+  .squad-feature .med-name { font-size: clamp(8px, 2.2vw, 11px); overflow-wrap: anywhere; }
+  .squad-feature .med-power { font-size: 8px; }
+  .squad-foot { margin-top: 8px; padding-top: 7px; }
+  .discovery-feature { grid-area: discovery; display: flex; text-align: center; padding: 12px; }
+  .discovery-top { margin-bottom: 0; }
+  .discovery-art { min-height: 0; margin: 6px auto 8px; }
+  .discovery-art .mini-pack { width: 46px; height: 62px; gap: 2px; }
+  .discovery-art .mini-pack > span:first-child { font-size: 5px; }
+  .discovery-art .mini-pack b { font-size: 7px; }
+  .discovery-art .pack-pokeball { zoom: .65; }
+  .discovery-art > i { right: -14px; }
+  .discovery-feature h2, .practice-feature h2 { font-size: 18px; line-height: 1.12; }
+  .discovery-feature p { margin: 5px 0 8px; }
+  .discovery-feature .button { min-height: 34px; padding: 6px; }
+  .discovery-feature .daily-clock { margin-top: 7px; font-size: 8px; flex-wrap: wrap; }
+  .practice-feature { grid-area: practice; padding: 13px; }
+  .practice-icon { position: static; margin-bottom: 12px; }
+  .practice-feature .eyebrow { padding: 0; }
+  .practice-feature p { font-size: 11px; }
+  .practice-feature p br { display: initial; }
+  .practice-feature .text-button { margin-top: 10px; }
+}
+
+@media (max-width: 600px) {
+  .collection-grid, .pokedex-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+  .collection-card, .pokedex-entry {
+    min-width: 0;
+    border-radius: 9px;
+    padding: 7px 4px;
+  }
+  .collection-card > .on-team, .collection-card > .rarity { top: 5px; left: 5px; }
+  .collection-card > .medallion { margin-top: 19px; padding-inline: 1px; }
+  .collection-card .medallion .coin { width: min(94%, 94px); margin-bottom: 7px; }
+  .collection-card .med-name, .pokedex-entry h3 {
+    font-size: clamp(10px, 2.7vw, 14px);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+  .collection-card .med-power { white-space: normal; line-height: 1.2; }
+  .collection-card-bottom { margin-top: 6px; padding-top: 4px; flex-wrap: wrap; }
+  .collection-card-bottom .round-button { width: 24px; height: 24px; }
+  .collection-card-bottom .type-label, .pokedex-entry .type-label { gap: 2px; font-size: 9px; margin: 0; }
+  .collection-card-bottom .type-label img.type-icon, .pokedex-entry .type-label img.type-icon { width: 12px; height: 12px; }
+  .dex-entry-top { flex-direction: column; gap: 2px; }
+  .dex-entry-top .discovery-status { font-size: 8px; line-height: 1.2; min-height: 2.4em; }
+  .pokedex-entry .dex-art { width: 94%; max-width: 96px; margin: 4px auto; }
+  .pokedex-entry h3 { margin-bottom: 4px; }
+  .dex-entry-foot { margin-top: 6px; padding-top: 5px; font-size: 8px; line-height: 1.25; }
+}
+
+@media (max-width: 600px) {
+  .five-section-shell .raid-hero { display: block; min-height: 0; padding: 14px; }
+  .raid-hero .raid-content { width: 64%; }
+  .five-section-shell .raid-hero .raid-boss {
+    position: absolute; top: 8%; right: 1%; width: 34%; height: 78%; margin: 0;
+  }
+  .five-section-shell .raid-content h2 { font-size: 25px; margin: 9px 0; }
+  .five-section-shell .raid-content .raid-hp { margin: 9px 0; padding: 6px; }
+  .five-section-shell .raid-content .button { min-height: 36px; font-size: 11px; padding: 8px; }
+  .five-section-shell .raid-locked { flex-direction: row; align-items: center; padding: 12px; }
+  .raid-locked > img { width: 27%; }
+  .raid-locked h2, .gym-trail h2 { font-size: 20px; }
+  .raid-locked p { font-size: 11px; }
+  .gym-trail, .five-section-shell .raid-reward-panel { padding: 14px 10px; margin-block: 12px; }
+  .badge-trail, .raid-pool { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .badge-trail { gap: 12px 3px; margin-top: 17px; }
+  .trail-seal { width: 38px; height: 43px; margin-bottom: 3px; }
+  .trail-name { font-size: 10px; min-height: 0; }
+  .trail-stop::before { top: 39px; }
+  .trail-stop:nth-child(3n):not(:last-child)::before { display: block; }
+  .trail-stop:nth-child(4n)::before { display: none; }
+  .raid-pool { gap: 5px; margin-block: 12px; }
+  .five-section-shell .raid-pool-card { padding: 6px 3px; gap: 3px; border-radius: 8px; overflow-wrap: anywhere; }
+  .five-section-shell .raid-pool-card img { width: 92%; height: auto; aspect-ratio: 1; }
+  .raid-pool-card b { font-size: 11px; }
+  .raid-pool-card small, .raid-pool-card em { font-size: 9px; line-height: 1.25; }
+
+  .shop-hub-grid { gap: 12px; }
+  .pack-counter { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 10px; }
+  .pack-counter, .research-counter { padding: 14px 10px; }
+  .counter-pack { flex-direction: column; align-items: stretch; gap: 9px; padding: 12px 0; }
+  .counter-pack-art { width: 100%; min-width: 0; min-height: 94px; }
+  .counter-pack-art .mini-pack { width: 54px; height: 78px; gap: 3px; }
+  .counter-pack-copy { display: flex; flex-direction: column; flex: 1; }
+  .counter-pack-copy h3 { font-size: 18px; line-height: 1.12; }
+  .counter-pack-copy .button { margin-top: auto; min-height: 36px; }
+  .research-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 10px; }
+  .research-task { display: block; padding: 12px 0; }
+  .research-icon { width: 27px; height: 27px; margin-bottom: 6px; }
+  .research-copy h3 { font-size: 15px; }
+  .research-copy > p, .research-reward { font-size: 10px; flex-wrap: wrap; gap: 4px; }
+}
+
+@media (max-width: 600px) {
+  .battle-dashboard .topbar { height: 44px; }
+  .battle-dashboard .main-shell main { padding: 8px 12px; }
+  .battle-hub .hub-heading { margin-bottom: 8px; }
+  .battle-hub .hub-heading h1 { font-size: 20px; margin-top: 3px; }
+  .battle-hub .hub-heading p { font-size: 9px; margin-top: 2px; }
+  .battle-hub-grid { gap: 7px; }
+  .arena-feature-copy { padding: 10px 13px; }
+  .arena-feature h2 { font-size: 21px; margin: 6px 0; }
+  .arena-feature-copy p { font-size: 9px; line-height: 1.3; margin-bottom: 6px; }
+  .arena-feature-copy .button { min-height: 30px; padding-block: 5px; }
+  .arena-reward { font-size: 6px; margin-top: 5px; }
+  .arena-feature .arena-progress { padding-block: 6px; }
+  .squad-feature { padding: 7px 9px; }
+  .squad-feature .section-header { margin-bottom: 3px; }
+  .squad-feature .section-header .text-button { padding-block: 4px; }
+  .squad-feature .section-header .eyebrow { margin: 0; }
+  .squad-foot { margin-top: 5px; padding-top: 5px; }
+  .discovery-feature { padding: 9px; }
+  .discovery-top svg { width: 16px; height: 16px; }
+  .discovery-art { margin: 3px auto 5px; }
+  .discovery-art .mini-pack { width: 35px; height: 47px; }
+  .discovery-art .mini-pack > span:first-child { font-size: 4px; }
+  .discovery-art .mini-pack b { font-size: 5px; }
+  .discovery-art .mini-pack small { font-size: 3px; }
+  .discovery-art .pack-pokeball { zoom: .45; }
+  .discovery-feature h2, .practice-feature h2 { font-size: 15px; }
+  .discovery-feature p { font-size: 9px; margin: 3px 0 5px; }
+  .discovery-feature .button { min-height: 30px; font-size: 10px; }
+  .discovery-feature .daily-clock { margin-top: 4px; font-size: 8px; gap: 3px; }
+  .practice-feature { padding: 10px; }
+  .practice-icon { margin-bottom: 5px; }
+  .practice-icon svg { width: 18px; height: 18px; }
+  .practice-feature h2 { margin: 5px 0; }
+  .practice-feature p { font-size: 10px; }
+  .practice-feature .text-button { margin-top: 5px; font-size: 10px; padding-block: 5px; }
+  .battle-dashboard .trainer-strip { padding-top: 8px; }
+  .battle-dashboard footer { padding-bottom: 7px; font-size: 7px; }
+}
+@media (max-width: 600px) and (max-height: 760px) {
+  .battle-dashboard .battle-hub-grid { zoom: .82; }
+  .battle-dashboard .trainer-strip { padding-top: 5px; }
+  .battle-dashboard .hub-heading { margin-bottom: 5px; }
+}
+
+/* Desktop destination hubs keep primary actions in the viewport. */
+@media (min-width: 1101px) {
+  .raids-page .main-shell main, .shop-page .main-shell main { padding: 14px 24px; }
+  .raids-page .page-heading, .shop-page .hub-heading { margin-bottom: 12px; }
+  .raids-page .page-heading h1, .shop-page .hub-heading h1 { font-size: 27px; }
+  .raids-page .page-heading p, .shop-page .hub-heading p { margin-top: 4px; }
+  .raids-page .field-note, .shop-page .field-note { display: none; }
+  .raids-page main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: 10px 14px;
+    align-content: start;
+  }
+  .raids-page .page-heading { grid-column: 1 / -1; }
+  .raids-page .raid-hero, .raids-page .raid-locked { grid-column: 1; grid-row: 2; margin: 0; min-height: 0; padding: 16px; }
+  .raids-page .raid-content h2 { font-size: 28px; margin: 8px 0; }
+  .raids-page .raid-content { width: 65%; }
+  .raids-page .raid-content .raid-hp { margin: 10px 0; width: 100%; }
+  .raids-page .raid-content > small { margin-top: 7px; }
+  .raids-page .raid-content .button { min-height: 34px; padding: 8px 12px; }
+  .raids-page .raid-boss { width: 34%; right: 0; }
+  .raids-page .gym-trail { grid-column: 1 / -1; grid-row: 3; margin: 0; padding: 12px 16px; }
+  .raids-page .gym-trail h2 { font-size: 20px; }
+  .raids-page .gym-trail-heading p { margin-top: 3px; }
+  .raids-page .trail-tally > b { font-size: 26px; }
+  .raids-page .badge-trail { grid-template-columns: repeat(11, minmax(0, 1fr)); margin-top: 12px; }
+  .raids-page .trail-seal { width: 33px; height: 38px; margin-bottom: 3px; }
+  .raids-page .trail-seal .type-icon { width: 19px; height: 19px; }
+  .raids-page .trail-index { margin-bottom: 0; }
+  .raids-page .trail-stop::before { top: 34px; }
+  .raids-page .trail-stop:nth-child(6)::before { display: block; }
+  .raids-page .trail-footer { padding-top: 6px; margin-top: 8px; }
+  .raids-page .trail-stop > p { font-size: 8px; margin-top: 3px; }
+  .raids-page .raid-reward-panel { margin: 0; padding: 10px 12px; border-radius: 12px; }
+  .raids-page .gym-trail + .raid-reward-panel { grid-column: 2; grid-row: 2; }
+  .raids-page .raid-reward-panel p { font-size: 10px; line-height: 1.4; }
+  .raids-page .raid-reward-panel h3 { font-size: 16px; }
+  .raids-page .raid-reward-panel .section-header { gap: 5px; }
+  .raids-page .raid-pool { grid-template-columns: repeat(6,minmax(0,1fr)); gap: 4px; margin: 10px 0; }
+  .raids-page .raid-pool-card { padding: 5px 2px; border-radius: 7px; gap: 3px; }
+  .raids-page .raid-pool-card img { width: 100%; height: 52px; }
+  .raids-page .raid-pool-card b { font-size: 10px; overflow-wrap: anywhere; }
+  .raids-page .raid-pool-card small, .raids-page .raid-pool-card em { font-size: 8px; line-height: 1.2; }
+  .raids-page .raid-inbox { max-height: 95px; overflow-y: auto; }
+  .raids-page .raid-inbox article { padding: 6px 0; }
+  .raids-page details.raid-reward-panel { font-size: 11px; }
+  .raids-page details[open] { max-height: 240px; overflow: auto; }
+
+  .shop-page .shop-hub-grid { gap: 14px; }
+  .shop-page .pack-counter, .shop-page .research-counter { padding: 14px; }
+  .shop-page .section-header { margin-bottom: 10px; }
+  .shop-page .pack-counter h2, .shop-page .research-counter h2 { font-size: 21px; }
+  .shop-page .counter-pack { gap: 14px; padding: 12px 0; }
+  .shop-page .counter-pack-art { min-width: 90px; min-height: 116px; }
+  .shop-page .counter-pack-art .mini-pack { width: 64px; height: 92px; gap: 4px; }
+  .shop-page .counter-pack-art .mini-pack b { font-size: 9px; }
+  .shop-page .counter-pack-copy h3 { font-size: 21px; margin: 3px 0 5px; }
+  .shop-page .counter-pack-copy p { font-size: 10px; line-height: 1.4; }
+  .shop-page .pack-traits { margin: 6px 0; }
+  .shop-page .counter-pack-copy .button { min-height: 32px; padding: 7px 12px; }
+  .shop-page .counter-daily { padding: 9px; }
+  .shop-page .research-intro { margin-bottom: 8px; }
+  .shop-page .research-task { padding: 9px 0; }
+  .shop-page .research-copy h3 { font-size: 14px; }
+  .shop-page .research-copy > p { margin: 4px 0 6px; }
+  .shop-page .research-note { padding-top: 8px; }
+  .shop-page .shop-guide { margin-top: 10px; padding-top: 10px; }
+  .shop-page .shop-guide[open] { max-height: 240px; overflow: auto; }
+}
+@media (min-width: 1101px) {
+  .raids-page .main-shell main { zoom: 1; }
+  .raids-page .raid-pool { grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); }
+}
+@media (min-width: 1101px) and (max-height: 800px) {
+  .shop-page .main-shell main { zoom: .84; }
+}
+
+@media (min-width: 1101px) {
+  .raids-page main { gap: 10px 16px; }
+  .raids-page .page-heading { margin-bottom: 0; }
+  .raids-page .raid-hero { padding: 18px 22px; }
+  .raids-page .raid-content { width: 58%; }
+  .raids-page .raid-content h2 { font-size: 32px; }
+  .raids-page .raid-boss { width: 43%; height: 100%; right: 0; top: 0; }
+  .raids-page .gym-trail + .raid-reward-panel { padding: 16px; }
+  .raids-page .raid-pool { gap: 8px; margin: 12px 0; }
+  .raids-page .raid-pool-card img { height: 74px; }
+  .raids-page .raid-pool-card b { font-size: 12px; }
+  .raids-page .raid-pool-card small, .raids-page .raid-pool-card em { font-size: 10px; }
+  .raids-page .raid-reward-panel p { font-size: 11px; }
+  .raids-page .gym-trail { padding: 12px 16px; }
+  .raids-page .gym-trail-heading { align-items: center; }
+  .raids-page .badge-trail { margin-top: 8px; }
+  .raids-page .trail-seal { width: 40px; height: 44px; }
+  .raids-page .trail-seal .type-icon { width: 23px; height: 23px; }
+  .raids-page .trail-stop::before { top: 37px; }
+  .raids-page .trail-name { font-size: 11px; }
+  .raids-page .trail-stop > p { display: none; }
+  .raids-page .trail-stop[open] > p { display: block; }
+  .raids-page .trail-footer { margin-top: 5px; padding-top: 5px; }
+  .raids-page details.raid-reward-panel { padding: 8px 12px; font-size: 12px; }
+}
+.raid-utilities { min-width: 0; }
+@media (min-width: 1101px) {
+  .raids-page .raid-utilities {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    gap: 10px;
+    align-items: start;
+  }
+  .raids-page .raid-utilities details[open] { max-height: 220px; }
+  .raids-page .raid-utilities .tag { font-size: 8px; }
+  .raids-page .raid-utilities h3 { font-size: 14px; }
+  .raids-page .raid-utilities .raid-rules { grid-template-columns: 1fr; }
+}
+@media (min-width: 1101px) {
+  .raids-page .gym-trail .trail-footer .text-button { padding-block: 3px; }
+  .raids-page .gym-trail .trail-stop summary { gap: 2px; }
+  .raids-page .gym-trail .trail-name { min-height: 26px; }
+  .raids-page .gym-trail .trail-tally > span { margin-top: 3px; }
+  .raids-page .gym-trail .trail-seal { margin-bottom: 2px; }
+}
+@media (min-width: 1101px) and (max-height: 800px) {
+  .raids-page .main-shell main { padding-block: 8px; }
+  .raids-page .page-heading h1 { font-size: 24px; }
+  .raids-page .raid-hero { padding: 12px 18px; }
+  .raids-page .raid-content h2 { font-size: 26px; margin: 5px 0; }
+  .raids-page .raid-content .raid-hp { margin: 6px 0; }
+  .raids-page .gym-trail { padding-block: 8px; }
+  .raids-page .gym-trail-heading p { font-size: 10px; }
+  .raids-page .gym-trail h2 { font-size: 18px; }
+  .raids-page .trail-stop > p { font-size: 7px; line-height: 1.2; }
+  .raids-page .raid-pool-card img { height: 62px; }
+  .raids-page .page-heading p { font-size: 10px; }
+}
+@media (min-width: 1101px) and (max-height: 800px) {
+  .raids-page .main-shell main { zoom: .86; }
+}
+
+@media (max-width: 600px) {
+  .raids-page .raid-pool {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 4px;
+    margin-block: 9px;
+  }
+  .raids-page .raid-pool-card b { font-size: 9px; line-height: 1.2; }
+  .raids-page .raid-pool-card small,
+  .raids-page .raid-pool-card em { font-size: 8px; line-height: 1.2; }
+  .raids-page .raid-reward-panel { padding: 11px; margin-block: 9px; }
+  .raids-page .raid-reward-panel .section-header { gap: 5px; margin-bottom: 5px; }
+  .raids-page .raid-reward-panel h3 { font-size: 17px; line-height: 1.2; }
+  .raids-page .raid-reward-panel p { font-size: 10px; line-height: 1.5; }
+  .raids-page .raid-reward-panel .eyebrow { font-size: 7px; }
+  .raids-page .raid-reward-panel .tag { font-size: 8px; }
+  .raids-page .raid-utilities { display: grid; gap: 7px; }
+  .raids-page .raid-utilities .raid-reward-panel { margin: 0; padding: 10px 11px; border-radius: 11px; }
+  .raids-page .raid-utilities summary { font-size: 12px; line-height: 1.5; }
+  .raids-page .raid-inbox { gap: 6px; }
+  .raids-page .raid-inbox article { padding-block: 9px; gap: 7px; }
+}
+
+/* Reserve a visible row for the inbox and every raid information panel. */
+@media (min-width: 901px) {
+  .raids-page .main-shell {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+  .raids-page .topbar, .raids-page footer { flex-shrink: 0; }
+  .raids-page .main-shell main {
+    zoom: 1;
+    flex: 1;
+    min-height: 0;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr) minmax(0, .85fr) 100px;
+    gap: 10px 14px;
+  }
+  .raids-page main > .page-heading { grid-column: 1 / -1; margin: 0; }
+  .raids-page main > .raid-hero, .raids-page main > .raid-locked {
+    grid-column: 1; grid-row: 2; min-height: 0; margin: 0; overflow: auto;
+  }
+  .raids-page main > .gym-trail {
+    grid-column: 1 / -1; grid-row: 3; min-height: 0; margin: 0; overflow: auto;
+  }
+  .raids-page .gym-trail + .raid-reward-panel {
+    grid-column: 2; grid-row: 2; min-height: 0; margin: 0; overflow: auto;
+  }
+  .raids-page .raid-utilities {
+    grid-column: 1 / -1; grid-row: 4;
+    display: grid;
+    grid-template-columns: 1.3fr repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    min-height: 0;
+    align-items: stretch;
+  }
+  .raids-page .raid-utilities > .raid-reward-panel {
+    margin: 0; min-height: 0; max-height: 100%; overflow: auto; padding: 10px 12px;
+  }
+  .raids-page .raid-utilities summary { font-size: 12px; line-height: 1.4; }
+  .raids-page .raid-utilities .raid-rules { grid-template-columns: 1fr; }
+  .raids-page .raid-utilities .raid-inbox { max-height: none; overflow: visible; }
+  .raids-page .raid-pool { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+@media (min-width: 901px) and (max-height: 800px) {
+  .raids-page .raid-hero { padding: 10px 16px; }
+  .raids-page .raid-content h2 { font-size: 23px; margin: 4px 0; }
+  .raids-page .raid-content .raid-hp { margin: 5px 0; }
+  .raids-page .raid-content .button { min-height: 30px; padding: 6px 10px; }
+  .raids-page .gym-trail { padding: 8px 12px; }
+  .raids-page .gym-trail h2 { font-size: 18px; }
+  .raids-page .badge-trail { margin-top: 6px; }
+}
+
+.raids-page .raid-locked {
+  background: var(--hub-deep);
+  color: var(--hub-on-dark);
+  border-color: var(--hub-deep);
+}
+.raids-page .raid-locked h2 { font-size: 28px; line-height: 1.12; margin: 8px 0; }
+.raids-page .raid-locked p { color: var(--hub-light); font-size: 11px; line-height: 1.5; margin-bottom: 8px; }
+.raids-page .raid-locked .eyebrow { color: var(--hub-light); font-size: 8px; }
+.raids-page .raid-locked > img { filter: none; }
+.raids-page .raid-locked .button { min-height: 34px; padding: 8px 12px; font-size: 11px; }
+@media (max-width: 600px) {
+  .raids-page .raid-locked h2 { font-size: 20px; }
+}

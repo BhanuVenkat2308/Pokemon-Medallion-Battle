@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.DS_Store
+test-results/
+playwright-report/
+
+# Local development snapshots and generated visual reports
+backups/
+docs/visual-polish/
+.env
+.env.*
+!.env.example
+*.log

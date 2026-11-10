@@ -1,0 +1,80 @@
+/* Battle presentation. All outcomes come from the existing engine. */
+.battle-center{position:relative}
+.battle-motion{position:absolute;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;isolation:isolate;min-height:190px}
+.motion-playing .battle-center>.clash{visibility:hidden}
+.motion-playing .score-pips{visibility:hidden}
+.motion-playing .battle-status>p{visibility:hidden}
+.motion-duel{display:flex;align-items:center;justify-content:center;gap:36px;width:100%}
+.motion-card{position:relative;width:145px;text-align:center;animation:medallion-enter .42s cubic-bezier(.2,.8,.2,1) both}
+.motion-side-1{animation-name:medallion-enter-rival}
+.motion-card .medallion{width:100%;opacity:1;cursor:default}
+.motion-card .coin{width:130px!important}
+.motion-card .med-power{display:none}
+.motion-side-label{display:block;font-size:8px;letter-spacing:2px;color:var(--muted);margin-top:7px}
+.motion-vs{font:700 20px var(--display);color:var(--muted)}
+.motion-caption{position:absolute;top:-4px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:1.8px;font-weight:700;color:var(--green)}
+.motion-aura{position:absolute;inset:0 0 25%;border-radius:50%;z-index:-1;opacity:0;background:radial-gradient(circle,color-mix(in srgb,var(--motion-color) 55%,transparent),transparent 70%)}
+.motion-active .motion-aura{opacity:1;animation:power-aura .75s ease-out}
+.motion-active .coin{filter:drop-shadow(0 0 9px color-mix(in srgb,var(--motion-color) 70%,transparent))}
+.motion-banner{position:absolute;z-index:12;left:8%;right:8%;top:42%;min-height:66px;display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 20px;border-block:2px solid #fff9;background:linear-gradient(110deg,#163f3bef,color-mix(in srgb,var(--motion-color) 55%,#163f3b),#163f3bef);box-shadow:0 5px 20px #163f3b30;color:#fff;animation:power-banner-in .23s ease-out both;pointer-events:none}
+.motion-banner:empty{display:none}
+.motion-banner b{display:block;font:600 23px var(--display);line-height:1.15}
+.motion-banner small{display:block;font-size:11px;margin-top:5px;color:#fff}
+.motion-banner-icon{width:40px;height:40px;flex:none}
+.motion-banner-icon .power-icon{width:100%;height:100%}
+.motion-vs-icon{display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:11px;font-weight:900;width:40px;height:40px;background:#fff;color:#163f3b;border-radius:4px}
+.motion-vs-icon .type-icon{width:23px;height:23px}
+.motion-banner-out{opacity:0;animation:none}
+.motion-skip{position:absolute;bottom:-19px;right:0;min-height:32px;padding:6px 10px;border:1px solid var(--line);border-radius:20px;background:var(--paper);font-size:10px;color:var(--green);cursor:pointer;z-index:15}
+.motion-skip:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.motion-particles{position:absolute;inset:10% 18% 20%;pointer-events:none;z-index:-1}
+.motion-particles i{position:absolute;left:50%;top:50%;width:5px;height:5px;border-radius:50%;background:#d4b86d;opacity:0;--angle:calc(var(--i)*36deg)}
+.battle-motion[data-effect=impact] .motion-particles i{animation:power-particle .65s ease-out both}
+.battle-motion[data-effect=support] .motion-aura{background:radial-gradient(circle,#9acb7caa,transparent 70%)}
+.battle-motion[data-effect=entry] .motion-aura{background:radial-gradient(circle,#e29b5aaa,transparent 70%)}
+.battle-motion[data-effect=protect] .motion-active .coin{box-shadow:0 0 0 5px #73b8dd55,0 0 25px #73b8dd88}
+.battle-motion[data-effect=reveal] .motion-active .motion-aura{background:radial-gradient(circle,#b799d4aa,transparent 70%)}
+.motion-winner{animation:winner-pulse .45s ease-out both}
+.field-effects .field-duration{display:inline-flex;gap:3px;margin-left:3px}
+.field-duration i{width:4px;height:4px;background:currentColor;border-radius:50%}
+@keyframes medallion-enter{from{opacity:0;transform:translate(-35px,18px) scale(.8) rotate(-8deg)}to{opacity:1;transform:none}}
+@keyframes medallion-enter-rival{from{opacity:0;transform:translate(35px,-18px) scale(.8) rotate(8deg)}to{opacity:1;transform:none}}
+@keyframes power-banner-in{from{opacity:0;transform:translateX(-25px) scaleX(.94)}to{opacity:1;transform:none}}
+@keyframes power-aura{0%{transform:scale(.7);opacity:0}40%{transform:scale(1.15);opacity:1}100%{transform:scale(1);opacity:.7}}
+@keyframes winner-pulse{50%{transform:scale(1.06)}100%{transform:none}}
+@keyframes power-particle{0%{opacity:0;transform:rotate(var(--angle)) translateX(15px)}20%{opacity:.8}100%{opacity:0;transform:rotate(var(--angle)) translateX(110px) scale(.4)}}
+@media(max-width:600px){.battle-motion{min-height:155px}.motion-duel{gap:10px}.motion-card{width:94px}.motion-card .coin{width:82px!important}.motion-card .med-name{font-size:10px}.motion-caption{top:-9px;font-size:7px}.motion-side-label{font-size:6px;margin-top:3px}.motion-banner{left:0;right:0;top:36%;min-height:54px;padding:8px 10px;gap:8px}.motion-banner b{font-size:19px}.motion-banner small{font-size:9px}.motion-banner-icon,.motion-vs-icon{width:32px;height:32px}.motion-vs-icon .type-icon{width:19px;height:19px}.motion-skip{bottom:-30px;font-size:9px}.motion-particles{inset:15% 25%}}
+@media(prefers-reduced-motion:reduce){.battle-motion,.motion-card,.motion-banner,.motion-aura,.motion-winner,.motion-particles i{animation:none!important;transition:none!important}}
+/* Keep the outcome hidden until its presentation finishes. */
+.motion-playing .battle-status>h3{visibility:hidden}
+.battle-motion[data-effect=priority] .motion-active .coin{animation:priority-dash .45s ease-in-out}
+.battle-motion[data-effect=clearance] .motion-active .motion-aura{animation:clearance-wave .65s ease-out}
+.battle-motion[data-effect=reveal] .motion-active .coin:after{content:'';position:absolute;inset:0;border:2px solid #b799d4;border-radius:50%;animation:reveal-ring .65s ease-out;pointer-events:none}
+.battle-motion[data-effect=support] .motion-active .motion-aura:after{content:'+';display:block;color:#fff;font-size:42px;font-weight:700;animation:field-rise .7s ease-out}
+.battle-motion[data-effect=entry] .motion-active .motion-aura:after{content:'!';display:block;color:#fff;font-size:42px;font-weight:700;animation:field-rise .7s ease-out}
+@keyframes priority-dash{35%{transform:translateX(12px) rotate(5deg)}65%{transform:translateX(-5px)}100%{transform:none}}
+@keyframes clearance-wave{from{transform:scale(.5) rotate(0);opacity:1}to{transform:scale(1.6) rotate(90deg);opacity:0}}
+@keyframes reveal-ring{from{transform:scale(.7);opacity:1}to{transform:scale(1.25);opacity:0}}
+@keyframes field-rise{from{transform:translateY(25px);opacity:0}50%{opacity:1}to{transform:translateY(-25px);opacity:0}}
+@media(prefers-reduced-motion:reduce){.battle-motion *,.battle-motion *:after{animation:none!important}}
+/* Each power has a complete enter / hold / exit, followed by a clear beat. */
+.motion-banner-exit{animation:power-banner-exit .18s ease-in forwards}
+@keyframes power-banner-exit{to{opacity:0;transform:translateY(-8px)}}
+.motion-flip{width:100%;min-height:160px;transform-origin:50% 42%;perspective:600px}
+.motion-flip-out{animation:medallion-flip-out .3s ease-in forwards}
+.motion-flip-in{animation:medallion-flip-in .3s ease-out both}
+.motion-back{width:130px;height:130px;border-radius:50%;border:5px solid #fff;box-shadow:0 3px 8px #163f3b30;position:relative;margin:0 auto;background:linear-gradient(#eb4f51 0 45%,#263d36 45% 54%,#f6f3e8 54%)}
+.motion-back.tier-2{background:linear-gradient(#548ac7 0 45%,#263d36 45% 54%,#f6f3e8 54%)}
+.motion-back.tier-3{background:linear-gradient(90deg,#edc850 25%,transparent 25% 75%,#edc850 75%),linear-gradient(#253b34 0 45%,#263d36 45% 54%,#f6f3e8 54%)}
+.motion-back .pokeball-mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:32px;height:32px;border:5px solid #263d36;background:#fff;border-radius:50%}
+.motion-front[hidden],.motion-back[hidden]{display:none!important}
+.arena-slot.enemy-slot.committed-tier-1{background:linear-gradient(#eb4f5128 45%,#fff8 45%)}
+.arena-slot.enemy-slot.committed-tier-2{background:linear-gradient(#548ac748 45%,#fff8 45%)}
+.arena-slot.enemy-slot.committed-tier-3{background:linear-gradient(#edc85070 45%,#fff8 45%)}
+@keyframes medallion-flip-out{from{transform:perspective(600px) rotateY(0)}to{transform:perspective(600px) rotateY(90deg)}}
+@keyframes medallion-flip-in{from{transform:perspective(600px) rotateY(-90deg)}to{transform:perspective(600px) rotateY(0)}}
+@media(max-width:600px){.motion-back{width:82px;height:82px;border-width:3px}.motion-flip{min-height:110px}.motion-back .pokeball-mark{width:25px;height:25px;border-width:4px}}
+@media(prefers-reduced-motion:reduce){.motion-flip-out,.motion-flip-in,.motion-banner-exit{animation:none!important}}
+
+.motion-cp-change{display:block;font-size:12px;font-style:normal;font-weight:700;color:#fff1ad;margin-top:5px}
+@media(max-width:600px){.motion-cp-change{font-size:10px}.motion-banner small{line-height:1.35}}
