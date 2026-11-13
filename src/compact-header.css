@@ -1,0 +1,47 @@
+/* Compact Battle header: 48px resources + 44px Gym + 36px daily discovery. */
+.battle-dashboard.game-shell.five-section-shell .topbar { height: 48px; padding-inline: 10px; border-bottom-width: 1px; }
+.battle-dashboard .trainer-emblem { flex: 0 0 36px; }
+.battle-dashboard .trainer-emblem > .type-icon { width: 34px; height: 34px; padding: 3px; border: 2px solid #e8f2fb; background: linear-gradient(#fff,#b2c4d9); box-shadow: 0 2px 0 #27658c; }
+.battle-dashboard .trainer-emblem > span,.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.battle-dashboard .top-actions { margin-left: auto; gap: 7px; }
+.battle-dashboard .top-actions .currency { min-height: 28px; padding-right: 7px; font-size: 13px; }
+.battle-dashboard .top-actions .coin-icon,.battle-dashboard .top-actions .candy-icon { width: 23px; height: 23px; }
+.battle-dashboard .topbar .icon-button { width: 30px; min-width: 30px; height: 32px; }
+.battle-dashboard .scene-lobby { height: calc(100dvh - 116px - env(safe-area-inset-bottom)); min-height: 440px; }
+.battle-dashboard .compact-gym-title {
+ height: 44px; flex: 0 0 44px; display: grid; grid-template-columns: minmax(0,1fr) auto; grid-template-rows: 20px 13px;
+ align-content: center; align-items: center; gap: 2px 8px; padding: 3px 10px;
+ border-block: 1px solid #d7faff; box-shadow: none;
+}
+.battle-dashboard .compact-gym-title h1 { font-size: 17px; line-height: 20px; font-style: normal; letter-spacing: -.25px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 1px #174b76,1px 0 #174b76,-1px 0 #174b76; }
+.battle-dashboard .compact-gym-title .compact-gym-number { font-size: 10px; line-height: 16px; background: var(--gym-accent,#276b9b); border: 1px solid #e9faff; padding: 0 7px; border-radius: 7px; color: #fff; text-shadow: 0 1px 2px #183659; }
+.compact-gym-progress { grid-column: 1/-1; display: flex; align-items: center; gap: 7px; color: #164c78; font-size: 9px; line-height: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.compact-gym-progress .progress { flex: 1; height: 5px; min-width: 20px; border: 1px solid #e4fbff; background: #2971a5; border-radius: 5px; }
+.compact-gym-progress .progress i { background: linear-gradient(#ffe982,#ffc31b); }
+.compact-badges { border-left: 1px solid #609ec2; padding-left: 7px; font-weight: 700; }
+.battle-dashboard .compact-discovery { height: 36px; flex: 0 0 36px; min-height: 36px; margin: 0; padding: 3px 10px; border-bottom: 1px solid #78dfff; background: #087db5bd; }
+.compact-discovery .scene-daily { gap: 9px; height: 100%; width: 100%; }
+.compact-pack-icon { width: 21px; height: 27px; flex: 0 0 21px; position: relative; transform: rotate(9deg); border: 1px solid #fff; border-radius: 2px; background: linear-gradient(#f5e8ef 0 10%,#ef4a50 11% 46%,#edf5fa 47% 89%,#d6e5ef 90%); box-shadow: 1px 2px 0 #154e77; }
+.compact-pack-icon > span { position: absolute; left: 4px; top: 8px; width: 11px; height: 11px; border: 2px solid #263e61; border-radius: 50%; background: #fff; }
+.compact-pack-icon > i { position: absolute; right: -6px; bottom: -2px; width: 13px; height: 13px; display: grid; place-items: center; border: 1px solid #fff; border-radius: 50%; background: #35a96b; font-size: 9px; font-style: normal; color: #fff; }
+.battle-dashboard .compact-discovery .daily-clock { display: flex; flex-wrap: nowrap; gap: 4px; margin: 0; font-size: 11px; line-height: 16px; color: #f4fbff; white-space: nowrap; }
+.battle-dashboard .compact-discovery .daily-clock > span { white-space: nowrap; }
+.battle-dashboard .compact-discovery .daily-clock b { font-size: 12px; letter-spacing: .2px; text-shadow: none; font-variant-numeric: tabular-nums; }
+.battle-dashboard .compact-discovery .daily-clock svg { width: 13px; height: 13px; }
+.daily-ready { color: #fff7c5; font-size: 12px; font-weight: 700; }
+.battle-dashboard .compact-discovery .scene-claim { min-height: 26px; padding: 3px 10px; font-size: 11px; line-height: 16px; border-width: 1px; border-radius: 8px; box-shadow: 0 1px #916c21; }
+.battle-dashboard .compact-discovery .scene-claim:disabled { color: #d8edf8; background: #ffffff13; border-color: transparent; box-shadow: none; }
+@container game (max-width:360px) {
+ .battle-dashboard .top-actions { gap: 4px; }
+ .battle-dashboard .top-actions .currency { font-size: 11px; }
+ .battle-dashboard .compact-gym-title h1 { font-size: 15px; }
+ .battle-dashboard .compact-discovery .daily-clock { font-size: 10px; }
+ .battle-dashboard .compact-discovery .daily-clock b { font-size: 11px; }
+ .battle-dashboard .compact-discovery .scene-claim { font-size: 10px; padding-inline: 6px; }
+}
+/* Let the raid scene use the same available height on the shortest phones. */
+.scene-lobby.raid-scene { min-height: 440px; }
+
+@media (max-height:600px) {
+ .raid-scene .scene-stage { min-height: 90px; }
+}

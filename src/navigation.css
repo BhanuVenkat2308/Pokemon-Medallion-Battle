@@ -1,0 +1,39 @@
+/* The shared game dock uses illustrated icons, not the thin utility icon set. */
+.game-shell.five-section-shell .sidebar {
+ padding: 0 5px max(2px,env(safe-area-inset-bottom));
+ background: linear-gradient(169deg,#ff6650 0%,#f63732 42%,#d91b2d 100%);
+ border-top: 3px solid #ffe5d9; box-shadow: 0 -3px 0 #b72c36,inset 0 2px 0 #ff8a6c;
+ overflow: visible;
+}
+.game-shell.five-section-shell .sidebar nav { gap: 2px; align-items: stretch; }
+.game-shell.five-section-shell .sidebar nav .nav-item {
+ position: relative; isolation: isolate; gap: 0; padding: 1px 0 2px; margin: 0;
+ background: none; box-shadow: none; border-radius: 0; overflow: visible; color: #fff;
+}
+.game-shell.five-section-shell .sidebar nav .nav-item::before {
+ content: ''; position: absolute; z-index: -1; inset: -5px 0 0;
+ border-radius: 48% 48% 19px 19px; border: 2px solid transparent;
+ transition: background-color .15s, border-color .15s;
+}
+.game-shell.five-section-shell .sidebar nav .nav-item.active::before {
+ background: linear-gradient(#fffbe5,#ffe8a0); border-color: #fff8c8;
+ box-shadow: 0 0 0 1px #e5b34b,inset 0 -3px 0 #edc969,0 2px 2px #902a3433;
+}
+.game-shell.five-section-shell .sidebar nav .nav-item .game-nav-art {
+ width: 38px; height: 38px; flex: 0 0 38px;
+ filter: drop-shadow(0 1px 0 #fff6e8) drop-shadow(0 2px 1px #842c3240);
+}
+.game-shell.five-section-shell .sidebar nav .nav-item > span:not(.nav-dot) {
+ font-family: var(--display); font-size: 13px; font-weight: 800; line-height: 1.1;
+ letter-spacing: -.2px; color: #fff; white-space: nowrap;
+ text-shadow: -1px -1px 0 #39282a,1px -1px 0 #39282a,-1px 1px 0 #39282a,1px 1px 0 #39282a,0 2px 0 #39282a;
+}
+.game-shell.five-section-shell .sidebar nav .nav-item.active > span:not(.nav-dot) { color: #fff; }
+.game-shell.five-section-shell .sidebar nav .nav-item:focus-visible { outline: 3px solid #fff5a6; outline-offset: -2px; border-radius: 16px; }
+@media (hover:hover) { .game-shell.five-section-shell .sidebar nav .nav-item:not(.active):hover::before { background: #ffffff20; } }
+.game-shell.five-section-shell .sidebar nav .nav-item:active .game-nav-art { transform: translateY(1px); }
+@container game (max-width:360px) {
+ .game-shell.five-section-shell .sidebar nav .nav-item > span:not(.nav-dot) { font-size: 11px; }
+ .game-shell.five-section-shell .sidebar nav .nav-item .game-nav-art { width: 35px; height: 35px; flex-basis: 35px; }
+}
+@media (prefers-reduced-motion:reduce) { .game-shell.five-section-shell .sidebar nav .nav-item::before { transition: none; } }

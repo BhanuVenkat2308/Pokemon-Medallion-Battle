@@ -43,8 +43,8 @@
 @keyframes power-aura{0%{transform:scale(.7);opacity:0}40%{transform:scale(1.15);opacity:1}100%{transform:scale(1);opacity:.7}}
 @keyframes winner-pulse{50%{transform:scale(1.06)}100%{transform:none}}
 @keyframes power-particle{0%{opacity:0;transform:rotate(var(--angle)) translateX(15px)}20%{opacity:.8}100%{opacity:0;transform:rotate(var(--angle)) translateX(110px) scale(.4)}}
-@media(max-width:600px){.battle-motion{min-height:155px}.motion-duel{gap:10px}.motion-card{width:94px}.motion-card .coin{width:82px!important}.motion-card .med-name{font-size:10px}.motion-caption{top:-9px;font-size:7px}.motion-side-label{font-size:6px;margin-top:3px}.motion-banner{left:0;right:0;top:36%;min-height:54px;padding:8px 10px;gap:8px}.motion-banner b{font-size:19px}.motion-banner small{font-size:9px}.motion-banner-icon,.motion-vs-icon{width:32px;height:32px}.motion-vs-icon .type-icon{width:19px;height:19px}.motion-skip{bottom:-30px;font-size:9px}.motion-particles{inset:15% 25%}}
-@media(prefers-reduced-motion:reduce){.battle-motion,.motion-card,.motion-banner,.motion-aura,.motion-winner,.motion-particles i{animation:none!important;transition:none!important}}
+@container game (max-width:600px) {.battle-motion{min-height:155px}.motion-duel{gap:10px}.motion-card{width:94px}.motion-card .coin{width:82px!important}.motion-card .med-name{font-size:10px}.motion-caption{top:-9px;font-size:7px}.motion-side-label{font-size:6px;margin-top:3px}.motion-banner{left:0;right:0;top:36%;min-height:54px;padding:8px 10px;gap:8px}.motion-banner b{font-size:19px}.motion-banner small{font-size:9px}.motion-banner-icon,.motion-vs-icon{width:32px;height:32px}.motion-vs-icon .type-icon{width:19px;height:19px}.motion-skip{bottom:-30px;font-size:9px}.motion-particles{inset:15% 25%}}
+@media (prefers-reduced-motion:reduce) {.battle-motion,.motion-card,.motion-banner,.motion-aura,.motion-winner,.motion-particles i{animation:none!important;transition:none!important}}
 /* Keep the outcome hidden until its presentation finishes. */
 .motion-playing .battle-status>h3{visibility:hidden}
 .battle-motion[data-effect=priority] .motion-active .coin{animation:priority-dash .45s ease-in-out}
@@ -56,7 +56,7 @@
 @keyframes clearance-wave{from{transform:scale(.5) rotate(0);opacity:1}to{transform:scale(1.6) rotate(90deg);opacity:0}}
 @keyframes reveal-ring{from{transform:scale(.7);opacity:1}to{transform:scale(1.25);opacity:0}}
 @keyframes field-rise{from{transform:translateY(25px);opacity:0}50%{opacity:1}to{transform:translateY(-25px);opacity:0}}
-@media(prefers-reduced-motion:reduce){.battle-motion *,.battle-motion *:after{animation:none!important}}
+@media (prefers-reduced-motion:reduce) {.battle-motion *,.battle-motion *:after{animation:none!important}}
 /* Each power has a complete enter / hold / exit, followed by a clear beat. */
 .motion-banner-exit{animation:power-banner-exit .18s ease-in forwards}
 @keyframes power-banner-exit{to{opacity:0;transform:translateY(-8px)}}
@@ -73,8 +73,8 @@
 .arena-slot.enemy-slot.committed-tier-3{background:linear-gradient(#edc85070 45%,#fff8 45%)}
 @keyframes medallion-flip-out{from{transform:perspective(600px) rotateY(0)}to{transform:perspective(600px) rotateY(90deg)}}
 @keyframes medallion-flip-in{from{transform:perspective(600px) rotateY(-90deg)}to{transform:perspective(600px) rotateY(0)}}
-@media(max-width:600px){.motion-back{width:82px;height:82px;border-width:3px}.motion-flip{min-height:110px}.motion-back .pokeball-mark{width:25px;height:25px;border-width:4px}}
-@media(prefers-reduced-motion:reduce){.motion-flip-out,.motion-flip-in,.motion-banner-exit{animation:none!important}}
+@container game (max-width:600px) {.motion-back{width:82px;height:82px;border-width:3px}.motion-flip{min-height:110px}.motion-back .pokeball-mark{width:25px;height:25px;border-width:4px}}
+@media (prefers-reduced-motion:reduce) {.motion-flip-out,.motion-flip-in,.motion-banner-exit{animation:none!important}}
 
 .motion-cp-change{display:block;font-size:12px;font-style:normal;font-weight:700;color:#fff1ad;margin-top:5px}
-@media(max-width:600px){.motion-cp-change{font-size:10px}.motion-banner small{line-height:1.35}}
+@container game (max-width:600px) {.motion-cp-change{font-size:10px}.motion-banner small{line-height:1.35}}

@@ -1,0 +1,157 @@
+/* Approved album, pack counter, and field guide. Shared 480px mobile canvas. */
+:root {
+ --album-blue: #0872b8; --album-dark: #104c86; --album-cyan: #42d6ef;
+ --album-border: #c1f6ff; --album-shadow: #086b9b; --album-ink: #153b63;
+ --album-gold: #ffd637; --album-pale: #edfaff;
+}
+:is(.collection-page,.pokedex-page,.shop-page) .main-shell {
+ background: linear-gradient(145deg,#64e1f5 0%,#bceffc 40%,#6ed0f0 100%);
+}
+:is(.collection-page,.pokedex-page,.shop-page) .main-shell > main { padding: 12px 10px 20px; }
+:is(.collection-page,.pokedex-page) .page-heading,.shop-page .hub-heading {
+ display: flex; flex-direction: column; align-items: center; gap: 7px; margin: 0 0 14px; position: relative;
+}
+:is(.collection-page,.pokedex-page) .page-heading > div,.shop-page .hub-heading > div { width: 100%; text-align: center; }
+:is(.collection-page,.pokedex-page) .page-heading h1,.shop-page .hub-heading h1 {
+ width: calc(100% - 28px); margin: 0 auto; padding: 7px 12px; border: 2px solid #fff3a1;
+ border-radius: 10px 10px 18px 18px; background: linear-gradient(#ffec83,#ffd12c 60%,#f6b619);
+ box-shadow: 0 0 0 2px #9e6f20,0 4px 0 #076d9e; font-size: 27px; line-height: 1.15;
+ color: #563e1c; letter-spacing: -.4px; text-shadow: 0 1px #fffbe5;
+}
+.collection-page .page-heading p { font-size: 11px; font-weight: 700; color: var(--album-ink); margin-top: 10px; }
+.collection-page .page-heading > .button { position: absolute; bottom: -2px; right: 0; min-height: 26px; max-width: none; font-size: 9px; padding: 3px 6px; border-radius: 7px; box-shadow: none; }
+.collection-page .page-heading > .button svg { display: none; }
+.collection-page .page-heading p { text-align: left; padding-left: 4px; }
+.collection-page .team-editor {
+ background: linear-gradient(135deg,#0877bb,#0a58a0); border: 2px solid var(--album-border); padding: 8px 6px 12px;
+ border-radius: 14px; box-shadow: 0 0 0 1px #0574a3,0 4px 0 var(--album-shadow); margin-bottom: 12px;
+}
+.collection-page .team-editor .section-header { justify-content: center; margin: 0 0 9px; padding: 2px 0 5px; border-bottom: 1px solid #6accf181; }
+.collection-page .team-editor .section-header h3 { color: #fff; font-size: 13px; text-transform: uppercase; letter-spacing: .7px; text-shadow: 0 2px #18466e; }
+.collection-page .team-editor .tag { display: none; }
+.collection-page .team-editor .team-row { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 0; padding: 5px 0 4px; margin: 0; width: 100%; max-width: none; }
+.collection-page .team-editor .medallion { min-width: 0; width: 100%; padding: 0; }
+.collection-page .team-editor .medallion .coin { width: 98%; margin: 0 0 3px; }
+.collection-page .team-editor .med-name,.collection-page .team-editor .med-power { display: none; }
+.collection-page .collection-toolbar { display: flex; flex-direction: column; gap: 8px; margin: 0 0 12px; }
+.collection-page .search-row { order: -1; display: flex; gap: 6px; }
+.collection-page .search-row input { min-width: 0; flex: 1; }
+.collection-page .search-row select { width: 112px; max-width: 36%; font-size: 11px; }
+:is(.collection-page,.pokedex-page) input,:is(.collection-page,.pokedex-page) select {
+ background: #edfbff; border: 2px solid #2394c8; border-radius: 10px; min-height: 36px; padding: 7px 9px; font-size: 12px; box-shadow: inset 0 1px 2px #18769e1a;
+}
+:is(.collection-page,.pokedex-page) .filters { gap: 5px; }
+:is(.collection-page,.pokedex-page) .filter { border: 1px solid #a9f2ff; border-radius: 10px; background: linear-gradient(#f3ffff,#d0f1ff); color: #104575; padding: 5px 7px; min-height: 29px; font-size: 10px; font-weight: 700; box-shadow: 0 2px #1682b8; }
+:is(.collection-page,.pokedex-page) .filter.active { background: linear-gradient(#fff296,#ffcb28); color: #5f4515; border-color: #fff6c9; box-shadow: 0 2px #b08718; }
+.inventory-heading { display: flex; align-items: center; justify-content: space-between; gap: 6px; background: linear-gradient(#087ac0,#075b9b); color: #fff; padding: 7px 9px; border: 1px solid #a3ebff; border-radius: 8px; margin-bottom: 7px; }
+.inventory-heading h2 { font-size: 15px; }
+.inventory-heading > span { font-size: 8px; color: #e2f6ff; }
+.collection-page .collection-grid,.pokedex-page .pokedex-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 6px; }
+.collection-page .collection-card,.pokedex-page .pokedex-entry {
+ background: linear-gradient(145deg,#fff,#e0f5ff); border: 2px solid #f2fdff; border-radius: 11px;
+ box-shadow: 0 0 0 1px #2a9ac8,0 3px 0 #2d94bc; padding: 7px 3px 5px; min-width: 0;
+}
+.collection-page .collection-card > .medallion { margin-top: 16px; }
+.collection-page .collection-card .coin { margin-bottom: 6px; }
+.collection-page .collection-card .med-name { color: #153b63; font-size: 11px; font-weight: 800; line-height: 1.15; }
+.collection-page .collection-card .med-power { font-size: 9px; color: #4f708d; margin-top: 3px; line-height: 1.2; }
+.collection-page .on-team { color: #674b12; background: #ffdf58; border-radius: 5px; font-size: 7px; padding: 2px 4px; top: 4px; left: 3px; }
+.collection-page .collection-card > .rarity { font-size: 11px; color: #c78b14; top: 3px; }
+.collection-page .collection-card-bottom { margin-top: 6px; padding-top: 5px; border-top: 1px solid #b5ddec; }
+.collection-page .collection-card-bottom .type-label { font-size: 9px; }
+.collection-page .round-button { min-height: 26px; border: 1px solid #c0e5f3; background: #d8f1fc; color: #176496; }
+/* Pokédex stays a four-column field guide; all discovery and availability labels remain. */
+.pokedex-page .dex-progress-banner { background: linear-gradient(135deg,#078fc9,#0666ae); border: 2px solid #baf4ff; border-radius: 12px; padding: 12px; margin: 0 0 12px; box-shadow: 0 0 0 1px #087ca9,0 3px #127cac; gap: 8px; }
+.pokedex-page .dex-progress-copy h3 { font-size: 20px; font-weight: 800; text-shadow: 0 2px #154e80; }
+.pokedex-page .dex-progress-copy h3 span { font-size: 12px; }
+.pokedex-page .dex-progress-copy .eyebrow { font-size: 8px; letter-spacing: 1px; }
+.pokedex-page .dex-completion b { font-size: 22px; }
+.pokedex-page .dex-progress-banner .progress { height: 9px; background: #afd8ea; border: 1px solid #e9faff; margin-top: 7px; }
+.pokedex-page .dex-progress-banner .progress i { background: linear-gradient(#ffed88,#ffcb26); }
+.pokedex-page .dex-toolbar { display: flex; flex-direction: column; gap: 8px; margin: 0 0 12px; }
+.pokedex-page #dex-search { order: -1; width: 100%; }
+.pokedex-page .dex-toolbar .filters { display: grid; grid-template-columns: 1fr 1fr 1.2fr; width: 100%; }
+.pokedex-page .dex-toolbar .filter { padding: 5px 3px; font-size: 10px; }
+.pokedex-page .dex-entry-top { min-height: 32px; font-size: 8px; color: #466d8d; gap: 3px; }
+.pokedex-page .discovery-status { font-size: 8px; line-height: 1.2; }
+.pokedex-page .dex-art { margin: 2px 0 5px; }
+.pokedex-page .pokedex-entry h3 { font-size: 11px; font-weight: 800; color: #183d64; line-height: 1.2; }
+.pokedex-page .pokedex-entry .type-label { font-size: 9px; margin-block: 5px; }
+.pokedex-page .dex-entry-foot { font-size: 8px; border-color: #b9dce8; line-height: 1.3; padding-top: 5px; }
+.pokedex-page .pokedex-entry.discovered .dex-entry-foot { background: #d3f2de; color: #246844; border: 1px solid #b1dec2; border-radius: 5px; padding: 4px 2px; }
+.pokedex-page .pokedex-entry.undiscovered { background: linear-gradient(#eaf3f8,#d5e4ee); }
+/* Shop: large foil packs and concise reward rows, without changing pack contents. */
+.shop-page .shop-hub { gap: 0; }
+.shop-page .shop-bag-count { font-size: 12px; font-weight: 700; background: #d7f4ff; border: 1px solid #7acde8; border-radius: 12px; padding: 3px 12px; }
+.shop-page .shop-bag-count small { display: inline; margin-left: 5px; font-size: 8px; }
+.shop-page .shop-hub-grid { display: flex; flex-direction: column; gap: 12px; }
+.shop-page .pack-counter { padding: 10px; gap: 10px; border: 2px solid #d9faff; border-radius: 12px; background: linear-gradient(#a7e9fb,#e1f7ff); box-shadow: 0 3px #1b93bf; }
+.shop-page .pack-counter > .section-header { margin: 0; padding: 0 0 5px; }
+.shop-page .pack-counter > .section-header h2 { font-size: 15px; }
+.shop-page .pack-counter > .section-header .tag { font-size: 9px; }
+.shop-page .counter-pack { padding-top: 0; border-top: 0; gap: 0; }
+.shop-page .counter-pack-art { background: none; border-radius: 0; min-height: 150px; padding: 6px 0; width: 100%; }
+.shop-page .counter-pack.poke .counter-pack-art { background: none; }
+.shop-page .counter-pack-art .mini-pack { width: 104px; height: 144px; border-radius: 3px; transform: rotate(-3deg); border: 2px solid #ffedf1; box-shadow: 5px 6px 0 #176e9c26,inset 0 0 0 3px #ffffff55; padding: 10px 4px; position: relative; overflow: hidden; }
+.shop-page .counter-pack.silver .mini-pack { transform: rotate(3deg); background: linear-gradient(130deg,#d7edff 0%,#3a92d0 24%,#bceaff 45%,#15629e 70%,#9cd0f1); }
+.shop-page .counter-pack.poke .mini-pack { background: linear-gradient(130deg,#ff9b76,#ef3c3c 35%,#bd1b31 70%,#fc6d60); }
+.shop-page .counter-pack-art .mini-pack:before,.shop-page .counter-pack-art .mini-pack:after { content: ''; position: absolute; left: 0; right: 0; height: 7px; background: repeating-linear-gradient(90deg,#ffffff85 0 2px,#ffffff15 2px 4px); }
+.shop-page .counter-pack-art .mini-pack:before { top: 0; }
+.shop-page .counter-pack-art .mini-pack:after { bottom: 0; }
+.shop-page .counter-pack-art .mini-pack > span:first-child { font-size: 9px; font-weight: 800; color: #fff; text-shadow: 0 1px #254870; }
+.shop-page .counter-pack-art .mini-pack b { font-size: 16px; line-height: 1; color: #fff; text-shadow: 0 2px #283f67; }
+.shop-page .counter-pack-art .mini-pack small { font-size: 6px; }
+.shop-page .counter-pack-art .pack-pokeball { width: 36px; height: 36px; background: #ffffff30; border-color: #fff5be; }
+.shop-page .counter-pack-copy { background: #e9f8ff; border: 1px solid #89cce8; border-radius: 9px; padding: 8px; }
+.shop-page .counter-pack-copy > .eyebrow { display: none; }
+.shop-page .counter-pack-copy h3 { font-size: 15px; min-height: 0; margin: 0 0 6px; }
+.shop-page .counter-pack-copy p { font-size: 9px; line-height: 1.35; margin: 0; }
+.shop-page .pack-traits { margin: 7px 0; gap: 3px; }
+.shop-page .pack-traits span { background: #d7effb; border: 0; padding: 3px; font-size: 8px; }
+.shop-page .counter-pack-copy .button,.shop-page .task-claim:not(:disabled) { background: linear-gradient(#ffeb83,#ffce2e); color: #61471b; border: 1px solid #fff6bb; box-shadow: 0 2px #b18218; }
+.shop-page .counter-pack-copy .button { min-height: 34px; padding: 5px; font-size: 11px; }
+.shop-page .counter-pack-copy .button svg { display: none; }
+.shop-page .counter-daily { padding: 9px; gap: 8px; flex-wrap: nowrap; border: 1px solid #8bcde8; background: #e6f8ff; margin-top: 0; }
+.shop-page .counter-daily > div { min-width: 0; flex: 1; }
+.shop-page .counter-daily b { font-size: 13px; }
+.shop-page .counter-daily p { font-size: 10px; margin-top: 3px; }
+.shop-page .counter-daily .daily-clock { font-size: 9px; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+.shop-page .counter-daily .button { width: auto; flex: 0 0 84px; padding: 6px; margin: 0; min-height: 34px; font-size: 10px; }
+.shop-page .daily-gift-icon { color: #c89513; }
+.shop-page .research-counter { padding: 0 9px 8px; border: 2px solid #c0f6ff; border-radius: 11px; background: #e4f6ff; box-shadow: 0 3px #1c91bd; }
+.shop-page .research-counter > .section-header { background: linear-gradient(#0a82c7,#0863a8); padding: 7px 9px; margin: 0 -9px 6px; border-radius: 9px 9px 0 0; color: #fff; }
+.shop-page .research-counter h2 { font-size: 17px; }
+.shop-page .research-ready { font-size: 9px; background: #ffffff24; }
+.shop-page .research-intro { font-size: 9px; margin-bottom: 4px; }
+.shop-page .research-list { gap: 4px; }
+.shop-page .research-task { padding: 7px 5px; border: 1px solid #b3deed; background: #f4fcff; border-radius: 7px; grid-template-columns: 22px minmax(0,1fr) 60px; gap: 6px; }
+.shop-page .research-copy h3 { font-size: 12px; }
+.shop-page .task-count { font-size: 9px; }
+.shop-page .research-copy .task-rewards { font-size: 9px; }
+.shop-page .research-copy { gap: 4px; }
+.shop-page .research-copy .progress { height: 5px; }
+.shop-page .task-claim { min-height: 30px; font-size: 10px; padding: 4px; }
+.shop-page .research-task.claimed .task-claim { background: #c8efcf; color: #25603b; border: 1px solid #a9d6b2; }
+.shop-page .research-note { padding-top: 7px; margin-top: 7px; }
+.shop-page .research-note p { font-size: 9px; }
+.shop-page .research-note .text-button { font-size: 10px; min-height: 24px; }
+.shop-page .shop-guide { margin-top: 12px; background: #e7f8ff; border: 2px solid #b9f3ff; border-radius: 9px; box-shadow: 0 2px #2493be; padding: 0 9px; }
+.shop-page .shop-guide > summary { padding-block: 9px; font-size: 13px; }
+.shop-page .shop-guide > summary small { font-size: 8px; }
+@container game (max-width:360px) {
+ .collection-page .page-heading h1,.pokedex-page .page-heading h1,.shop-page .hub-heading h1 { font-size: 24px; }
+ .collection-page .collection-card .med-name,.pokedex-page .pokedex-entry h3 { font-size: 10px; }
+ .collection-page .collection-card .med-power { font-size: 8px; }
+ .inventory-heading > span { font-size: 7px; }
+ .shop-page .counter-pack-copy { padding: 6px; }
+ .shop-page .counter-pack-copy h3 { font-size: 13px; }
+ .shop-page .counter-pack-art .mini-pack { width: 88px; height: 126px; }
+ .shop-page .counter-pack-art { min-height: 132px; }
+ .shop-page .research-copy h3 { font-size: 11px; }
+ .shop-page .counter-daily .button { flex-basis: 68px; }
+}
+.shop-page .shop-hub-grid { align-items: stretch; }
+.shop-page .shop-hub-grid > section { width: 100%; }
+.shop-page .hub-heading h1 { max-width: none; }
+.shop-page .counter-pack.silver .counter-pack-art { background: none; }
+.collection-page input,.pokedex-page input { font-size: 16px; }

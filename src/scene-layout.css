@@ -1,0 +1,196 @@
+/* Screenshot composition: status header, uninterrupted arena, deck, primary action. */
+:is(.battle-dashboard,.raids-page) { background: #10233e; min-height: 100dvh; }
+:is(.battle-dashboard,.raids-page) .main-shell { width: min(100%, 600px); margin: 0 auto; min-height: 100dvh; background: #1b5283; padding: 0 0 76px; display: flex; flex-direction: column; }
+:is(.battle-dashboard,.raids-page) .main-shell > main { margin: 0; width: 100%; max-width: none; padding: 0; flex: 1; display: block; zoom: 1; }
+:is(.battle-dashboard,.raids-page) .topbar { padding: 0 12px; height: 64px; flex-shrink: 0; }
+:is(.battle-dashboard,.raids-page) .trainer-emblem b { font-size: 12px; max-width: 145px; }
+:is(.battle-dashboard,.raids-page) .trainer-emblem small { font-size: 9px; }
+:is(.battle-dashboard,.raids-page) .top-actions { gap: 5px; }
+:is(.battle-dashboard,.raids-page) .top-actions .currency { min-width: 0; padding: 3px 6px 3px 3px; font-size: 12px; }
+:is(.battle-dashboard,.raids-page) .topbar .icon-button { width: 28px; min-width: 28px; padding: 4px; }
+:is(.battle-dashboard,.raids-page) .sidebar { position: fixed; inset: auto auto 0 50%; transform: translateX(-50%); width: min(100%,600px); height: calc(76px + env(safe-area-inset-bottom)); padding: 5px 6px max(5px,env(safe-area-inset-bottom)); z-index: 30; border: 0; border-top: 3px solid #fff; background: linear-gradient(#ff523a,#d92330); box-shadow: 0 -3px 0 #a02b38; }
+:is(.battle-dashboard,.raids-page) .sidebar > .brand,:is(.battle-dashboard,.raids-page) .sidebar-bottom { display: none; }
+:is(.battle-dashboard,.raids-page) .sidebar nav { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 3px; height: 100%; }
+:is(.battle-dashboard,.raids-page) .sidebar .nav-item { display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 4px 0; min-width: 0; border-radius: 10px; color: #fff; }
+:is(.battle-dashboard,.raids-page) .sidebar .nav-item > span:not(.nav-dot) { display: block; font-size: 11px; font-weight: 700; white-space: nowrap; }
+:is(.battle-dashboard,.raids-page) .sidebar .nav-item svg { width: 28px; height: 28px; }
+:is(.battle-dashboard,.raids-page) .sidebar .nav-item.active { background: #fff3cf; color: #c63132; box-shadow: none; }
+:is(.battle-dashboard,.raids-page) .sidebar .nav-item small,:is(.battle-dashboard,.raids-page) .sidebar .nav-dot { display: none; }
+:is(.battle-dashboard,.raids-page) .main-shell > footer { display: none; }
+.scene-lobby { display: flex; flex-direction: column; min-height: 600px; height: calc(100dvh - 140px - env(safe-area-inset-bottom)); background: #22689c url('../public/scenes/gym-temple.svg') center / 100% 100%; position: relative; isolation: isolate; color: #fff; }
+.scene-lobby.raid-scene { background: #3b517c url('../public/scenes/raid-sanctuary.svg') 60% center / auto 100%; }
+.scene-title { background: linear-gradient(90deg,#f4faffec,#d2e9fff0); border-block: 3px solid #fff; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #226092; flex-shrink: 0; }
+.scene-title h1 { font-size: 24px; line-height: 1.1; letter-spacing: -.4px; }
+.scene-title > span { font-size: 13px; font-weight: 700; white-space: nowrap; }
+.scene-toolbar { margin-top: 12px; padding: 7px 16px; display: flex; align-items: center; justify-content: space-between; gap: 10px; background: #16355e75; min-height: 70px; }
+.scene-daily { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+.scene-daily > div { display: grid; gap: 4px; }
+.scene-daily b { font-family: var(--display); font-size: 16px; }
+.scene-daily .daily-clock { margin: 0; font-size: 10px; color: #e6f7ff; gap: 4px; flex-wrap: wrap; }
+.scene-daily .daily-clock svg { width: 12px; height: 12px; }
+.scene-pack { display: grid; place-items: center; width: 40px; height: 46px; border: 2px solid #afebff; border-radius: 8px; background: linear-gradient(#42caf6,#2363af); box-shadow: 0 3px 0 #153e75; flex-shrink: 0; }
+.scene-claim { background: #ffda4a; color: #634408; border: 2px solid #fff2b3; border-radius: 8px; padding: 7px; font-size: 11px; font-weight: 700; margin-left: auto; }
+.scene-claim:disabled { background: #d5e5f1; color: #42607a; opacity: 1; }
+.scene-shortcut { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(#6ae4f8,#0b9bd3); border: 3px solid #efffff; box-shadow: 0 3px 0 #176a9c; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; flex-shrink: 0; gap: 2px; text-shadow: 0 1px 2px #186795; }
+.scene-shortcut span { font-family: var(--display); font-size: 10px; font-weight: 800; }
+.scene-shortcut.raid-shortcut { background: linear-gradient(#ecadce,#c75393); box-shadow: 0 3px 0 #894b87; }
+.scene-shortcut.gym-shortcut { background: linear-gradient(#a8e74e,#5eac28); }
+.scene-stage { flex: 1; min-height: 135px; position: relative; }
+.scene-gym-emblem { position: absolute; top: 5%; left: 50%; transform: translateX(-50%); width: 64px; height: 64px; display: grid; place-items: center; border-radius: 50%; background: #d4f6ff; border: 5px solid #5ad5f6; box-shadow: 0 0 0 4px #196ba6,0 5px 12px #0c335866; }
+.scene-gym-emblem .type-icon { width: 42px; height: 42px; }
+.scene-bottom { flex-shrink: 0; padding: 0 12px 10px; background: linear-gradient(transparent,#193c6666); }
+.scene-lobby .scene-team.squad-feature { display: flex; flex-direction: row; align-items: center; gap: 0; padding: 8px 0 12px; border: none; background: none; box-shadow: none; border-radius: 0; }
+.scene-lobby .scene-team .team-row { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 0; margin: 0; padding: 0; width: 100%; max-width: none; flex: 1; align-items: center; }
+.scene-lobby .scene-team .medallion { padding: 0; width: 100%; min-width: 0; }
+.scene-lobby .scene-team .medallion .coin { width: 100%; margin: 0; }
+.scene-team .med-name,.scene-team .med-power { display: none; }
+.scene-team-arrow { flex: 0 0 16px; width: 16px; padding: 0; font-size: 42px; font-family: var(--display); font-weight: 800; color: #ffdf36; text-shadow: 1px 0 #fff,-1px 0 #fff,0 1px #fff,0 -1px #fff; }
+.scene-actions { display: grid; grid-template-columns: 70px minmax(0,1fr) 70px; gap: 14px; align-items: center; margin: 8px 14px 0; }
+.scene-actions .scene-shortcut { justify-self: center; }
+.scene-battle.button { font-size: 30px; font-weight: 800; min-height: 68px; padding: 7px 12px; border: 3px solid #fff8bf; border-radius: 13px; color: #fff; text-shadow: 0 2px 0 #c28a10; box-shadow: 0 4px 0 #a57826, inset 0 2px 0 #fff4a2; display: flex; flex-direction: column; gap: 0; line-height: 1.1; }
+.scene-battle small { font-size: 11px; color: #6c4c0a; text-shadow: none; }
+.scene-rating { display: flex; align-items: center; gap: 8px; margin: 14px 30px 4px; font-size: 11px; color: #f5faff; }
+.scene-rating .progress { flex: 1; height: 6px; background: #133d69; border: 1px solid #83c2e3; }
+.scene-footnote { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 9px; color: #e6f4ff; margin-top: 7px; min-height: 24px; }
+.scene-footnote button,.scene-footnote a { color: #fff; display: grid; place-items: center; min-width: 28px; min-height: 28px; }
+.scene-raid-status { display: grid; gap: 3px; font-size: 12px; }
+.scene-raid-status > b { font-size: 17px; }
+.scene-raid-status small { font-size: 10px; }
+.scene-boss-health { padding: 14px 24px 0; }
+.scene-boss-health > div:first-child { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 6px; }
+.scene-boss-health .progress { height: 10px; background: #18335a; border: 1px solid #b4d1ec; }
+.raid-stage { display: flex; align-items: center; justify-content: center; flex-direction: column; }
+.raid-stage > img { height: 100%; max-height: 290px; width: min(80%,340px); object-fit: contain; position: absolute; inset: 0; margin: auto; filter: drop-shadow(0 10px 6px #18335255); }
+.scene-lock-message { position: relative; z-index: 1; margin-top: auto; padding: 12px; width: 100%; text-align: center; background: #153359bd; }
+.scene-lock-message h2 { color: #fff; font-size: 20px; }
+.scene-lock-message p { font-size: 12px; color: #e4f4ff; }
+.raids-page .raid-details { padding: 16px; background: #e4f1fb; scroll-margin-top: 10px; }
+.raids-page .raid-details .gym-trail { margin: 0 0 16px; }
+.raids-page .raid-details .badge-trail { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px 6px; }
+.raids-page .raid-details .trail-name { font-size: 12px; }
+.raids-page .raid-details .trail-stop:before { display: none; }
+.raids-page .raid-details .raid-utilities { display: grid; grid-template-columns: 1fr; margin-top: 14px; gap: 12px; }
+.raids-page .raid-details .raid-reward-panel { padding: 16px; margin-bottom: 12px; }
+.raids-page .raid-details .raid-pool { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); }
+.raids-page .raid-details .raid-pool-card { padding: 5px; }
+.raids-page .raid-details .raid-pool-card img { width: 100%; height: 65px; object-fit: contain; }
+.raids-page .raid-details .raid-pool-card b { font-size: 11px; }
+.raids-page .raid-details .raid-pool-card small { font-size: 9px; }
+@container game (max-width:600px) {
+ :is(.battle-dashboard,.raids-page) .main-shell { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+ :is(.battle-dashboard,.raids-page) .topbar { height: 56px; padding-inline: 8px; }
+ :is(.battle-dashboard,.raids-page) .trainer-emblem b { font-size: 10px; max-width: 100px; }
+ :is(.battle-dashboard,.raids-page) .trainer-emblem small { font-size: 8px; }
+ :is(.battle-dashboard,.raids-page) .top-actions .currency { font-size: 11px; padding: 2px 4px 2px 2px; }
+ :is(.battle-dashboard,.raids-page) .sidebar { height: calc(68px + env(safe-area-inset-bottom)); }
+ :is(.battle-dashboard,.raids-page) .sidebar .nav-item > span:not(.nav-dot) { font-size: 9px; }
+ .scene-lobby { height: calc(100dvh - 124px - env(safe-area-inset-bottom)); min-height: 460px; }
+ .scene-title { padding: 9px 12px; }
+ .scene-title h1 { font-size: 21px; }
+ .scene-title > span { font-size: 11px; }
+ .scene-toolbar { margin-top: 9px; padding: 5px 12px; min-height: 62px; }
+ .scene-daily { gap: 6px; }
+ .scene-daily b { font-size: 13px; }
+ .scene-daily .daily-clock { font-size: 8px; }
+ .scene-claim { font-size: 9px; padding: 6px 4px; }
+ .scene-pack { width: 28px; height: 36px; }
+ .scene-pack svg { width: 20px; }
+ .scene-shortcut { width: 54px; height: 54px; border-width: 2px; }
+ .scene-shortcut span { font-size: 8px; }
+ .scene-gym-emblem { width: 50px; height: 50px; border-width: 4px; }
+ .scene-gym-emblem .type-icon { width: 32px; height: 32px; }
+ .scene-stage { min-height: 100px; }
+ .scene-bottom { padding: 0 5px 5px; }
+ .scene-actions { grid-template-columns: 54px minmax(0,1fr) 54px; gap: 12px; margin-inline: 18px; }
+ .scene-battle.button { font-size: 27px; min-height: 58px; }
+ .scene-rating { margin: 11px 22px 0; font-size: 10px; }
+ .scene-footnote { font-size: 8px; margin-top: 2px; }
+ .scene-team-arrow { flex-basis: 12px; width: 12px; font-size: 32px; }
+ .scene-lobby .scene-team.squad-feature { padding-bottom: 8px; }
+}
+@container game (max-width:360px) {
+ :is(.battle-dashboard,.raids-page) .trainer-emblem b { max-width: 64px; font-size: 8px; }
+ :is(.battle-dashboard,.raids-page) .trainer-emblem small { font-size: 7px; }
+ :is(.battle-dashboard,.raids-page) .top-actions { gap: 2px; }
+ .scene-title h1 { font-size: 18px; }
+ .scene-daily b { font-size: 11px; }
+ .scene-pack { display: none; }
+ .scene-daily .daily-clock { max-width: 110px; }
+ .scene-actions { margin-inline: 12px; gap: 8px; }
+}
+/* Approved illustrated lobby: artwork is scenery only; Pokémon keep their existing assets. */
+:is(.battle-dashboard,.raids-page) { background: radial-gradient(ellipse at 50% 30%,#164e7b,#0b1732 70%); }
+:is(.battle-dashboard,.raids-page) .main-shell { box-shadow: 0 0 90px #007ab638; }
+.scene-lobby { background: #126fa5 url('../public/scenes/gym-lobby.jpg') center 40% / cover; }
+.scene-lobby.raid-scene { background: #d1a264 url('../public/scenes/raid-canyon.jpg') center / cover; }
+.scene-title { background: linear-gradient(125deg,#b8f6ffed,#6fd0f4f2); border-block: 3px solid #ecffff; box-shadow: 0 3px 0 #0789c8; position: relative; z-index: 1; }
+.scene-title h1 { font-style: italic; font-weight: 800; color: #fff; text-shadow: -1px -1px #124a7b,1px -1px #124a7b,-1px 1px #124a7b,1px 2px #124a7b,0 3px #124a7b; font-size: 28px; }
+.scene-title > span { color: #fff; font-family: var(--display); font-weight: 800; font-size: 17px; text-shadow: 0 2px #18548a; }
+.scene-toolbar { margin: 3px 0 0; min-height: 64px; background: linear-gradient(110deg,#146ebee8,#39bcf0db); border-bottom: 2px solid #a2efff; padding: 8px 16px; }
+.scene-daily { gap: 12px; }
+.scene-daily b { font-size: 18px; text-shadow: 0 2px #215487; }
+.scene-pack { width: 42px; height: 42px; background: linear-gradient(#ffe46e,#f3a42b); border-color: #fff0b1; color: #fff; transform: rotate(-6deg); }
+.scene-claim { font-family: var(--display); font-size: 15px; background: linear-gradient(#ffe75d,#ffbd16); border-radius: 12px; padding: 7px 14px; border-color: #fff7b9; box-shadow: 0 3px #aa771d; }
+.scene-bottom { background: linear-gradient(transparent 0%,#168dd5db 26%,#075cac 75%); padding-bottom: 6px; }
+.scene-lobby .scene-team.squad-feature { padding-top: 10px; padding-bottom: 14px; }
+.scene-actions { gap: 16px; margin-top: 3px; }
+.scene-shortcut { border-color: #e6fcff; background: radial-gradient(ellipse at 35% 20%,#9df3ff,#12bbe9 55%,#0877b9); box-shadow: 0 0 0 2px #075480,0 4px 0 #144b78,inset 0 0 0 2px #5de2f6; }
+.scene-shortcut svg { stroke-width: 2.5; filter: drop-shadow(0 2px 0 #126fa3); }
+.scene-shortcut span { font-size: 10px; font-weight: 800; }
+.scene-battle.button { background: linear-gradient(135deg,#ffec70 0%,#ffd329 35%,#ffbc0c 65%,#ffe157 100%); border: 3px solid #fff8bc; box-shadow: 0 0 0 2px #9d7015,0 5px #95691c,inset 0 2px 0 #fff; font-size: 36px; font-style: italic; letter-spacing: .5px; text-shadow: -1px -1px #9d6511,1px -1px #9d6511,-1px 1px #9d6511,1px 2px #9d6511,0 3px #9d6511; }
+.scene-battle.button:disabled { background: #bdcbd6; color: #52677b; text-shadow: none; box-shadow: 0 3px #607a91; border-color: #e0e9f0; }
+.scene-battle small { font-style: normal; letter-spacing: 0; font-weight: 700; }
+.scene-rating { font-weight: 700; }
+.scene-rating .progress { height: 8px; }
+.scene-raid-status { width: 100%; grid-template-columns: 1fr auto; align-items: center; }
+.scene-raid-status > b { font-family: var(--display); font-size: 21px; }
+.scene-raid-status > span { font-size: 12px; }
+.scene-raid-status > small { grid-column: 1/-1; }
+.scene-boss-health { padding-top: 10px; color: #fff; background: linear-gradient(#146ebea6,transparent); text-shadow: 0 2px 2px #1a4571; }
+.scene-boss-health > div:first-child { font-weight: 800; font-size: 14px; }
+.scene-boss-health .progress { height: 12px; border: 2px solid #eff8ff; box-shadow: 0 2px #214e77; }
+.raid-stage > img { width: 90%; max-width: 460px; max-height: 100%; height: 100%; }
+:is(.battle-dashboard,.raids-page) .sidebar { background: linear-gradient(165deg,#ff654d,#f03832 50%,#cd2030); }
+:is(.battle-dashboard,.raids-page) .sidebar .nav-item.active { border-radius: 50% 50% 14px 14px; background: linear-gradient(#fffbe1,#ffe9a4); box-shadow: inset 0 0 0 2px #ffdb7c; }
+@container game (max-width:600px) {
+ .scene-title h1 { font-size: 23px; }
+ .scene-title > span { font-size: 13px; }
+ .scene-toolbar { min-height: 58px; padding: 7px 12px; }
+ .scene-daily b { font-size: 15px; }
+ .scene-daily .daily-clock { font-size: 9px; }
+ .scene-pack { width: 32px; height: 36px; }
+ .scene-claim { font-size: 12px; padding: 6px 10px; }
+ .scene-battle.button { font-size: 30px; }
+ .scene-shortcut span { font-size: 8px; }
+ .scene-raid-status > b { font-size: 18px; }
+ .scene-raid-status > span { font-size: 11px; }
+ .scene-boss-health > div:first-child { font-size: 12px; }
+}
+@container game (max-width:360px) {
+ .scene-title h1 { font-size: 20px; }
+ .scene-daily { gap: 6px; }
+ .scene-daily b { font-size: 13px; }
+ .scene-daily .daily-clock { font-size: 8px; max-width: 160px; }
+ .scene-claim { padding-inline: 6px; }
+ .scene-raid-status > span { font-size: 9px; }
+ .scene-battle.button { font-size: 26px; }
+}
+@media (max-height:740px) {@container game (min-width:601px) {
+ .scene-lobby { min-height: 450px; }
+ .scene-toolbar { min-height: 48px; padding-block: 4px; }
+ .scene-title { padding-block: 6px; }
+ .scene-stage { min-height: 65px; }
+ .scene-battle.button { min-height: 54px; font-size: 28px; }
+ .scene-shortcut { width: 54px; height: 54px; }
+}}
+/* Keep the deck and primary action at the same coordinates in both destinations. */
+.scene-bottom { display: grid; grid-template-rows: auto 78px 24px 28px; }
+.scene-lobby .scene-team.squad-feature { grid-row: 1; margin: 0; }
+.scene-actions { grid-row: 2; margin-top: 0; }
+.scene-rating { grid-row: 3; margin-block: 6px 0; }
+.scene-footnote { grid-row: 4; margin: 0; }
+@container game (max-width:600px) { .scene-bottom { grid-template-rows: auto 70px 20px 28px; } }
+.scene-bottom { grid-template-columns: minmax(0,1fr); }
+.scene-bottom > * { grid-column: 1; }
+.scene-lobby .scene-team.squad-feature { grid-area: 1 / 1; width: 100%; }
+.scene-lobby .scene-team .team-row { min-width: 0; }

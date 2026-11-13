@@ -6,20 +6,20 @@
 .squad-feature{border:1px solid var(--hub-rule);background:var(--hub-paper);border-radius:16px;padding:18px 24px 12px;min-width:0;display:flex;flex-direction:column}.squad-feature .section-header{margin:0 0 9px;align-items:center}.squad-feature .eyebrow{font-size:7px;color:var(--hub-quiet)}.squad-feature h2{font-size:21px;letter-spacing:-.5px}.squad-feature .team-row{flex:1;gap:10px;align-items:center;justify-content:space-between;padding:0;margin:0}.squad-feature .medallion{min-width:0;width:calc((100% - 50px)/6);padding:0}.squad-feature .coin{width:min(100%,86px)}.squad-feature .med-name{font-size:10px;margin-top:5px}.squad-feature .med-power{font-size:7px;line-height:1.2;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}.squad-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--hub-rule);margin-top:10px;padding-top:8px;gap:10px;font-size:9px;color:var(--hub-quiet)}.squad-foot>span{display:flex;gap:4px;align-items:center}.squad-foot strong{color:var(--ink);font-size:12px}.squad-foot small{font-size:7px;letter-spacing:.6px;font-weight:500}.squad-warning{color:var(--coral-hover)}.practice-feature{position:relative;border:1px solid var(--hub-rule);border-radius:16px;padding:24px 22px;background:var(--hub-paper);display:flex;flex-direction:column;justify-content:center}.practice-feature .eyebrow{font-size:7px;color:var(--hub-quiet);padding-right:25px}.practice-feature h2{font-size:23px;margin:9px 0;letter-spacing:-.6px}.practice-feature p{font-size:11px;color:var(--hub-quiet)}.practice-feature .text-button{align-self:flex-start;margin-top:13px;font-size:11px}.practice-icon{position:absolute;right:18px;top:21px;color:var(--hub-quiet);opacity:.55}.trainer-strip{display:flex;gap:28px;align-items:center;padding:18px 3px 0;color:var(--hub-quiet);font-size:10px}.trainer-strip>span,.trainer-strip>button{display:flex;gap:7px;align-items:center;padding:0;font-size:10px;white-space:nowrap}.trainer-strip b{font-size:13px;color:var(--ink)}.trainer-strip small{font-size:9px;color:var(--hub-quiet);font-weight:400}.trainer-strip .trainer-expedition{margin-left:auto;font-weight:600;color:var(--ink)}
 .gym-trail{border:1px solid var(--hub-rule);border-radius:16px;background:var(--hub-paper);padding:26px;margin:24px 0}.gym-trail-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}.gym-trail-heading .eyebrow{font-size:8px;color:var(--hub-quiet)}.gym-trail h2{font-size:26px;margin-top:4px}.gym-trail-heading p{font-size:11px;color:var(--hub-quiet);margin-top:6px}.trail-tally{display:flex;flex-direction:column;align-items:flex-end;white-space:nowrap}.trail-tally>b{font:500 38px/1 var(--display);letter-spacing:-1.5px}.trail-tally small{font-size:18px;color:var(--hub-quiet);margin-left:4px}.trail-tally>span{font-size:7px;letter-spacing:1.1px;margin-top:8px;color:var(--hub-quiet)}.badge-trail{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));margin-top:26px;align-items:start}.trail-stop{position:relative;text-align:center;min-width:0}.trail-stop:before{content:'';position:absolute;top:49px;left:50%;width:100%;border-top:1px dashed var(--hub-rule)}.trail-stop:last-child:before{display:none}.trail-stop summary{list-style:none;cursor:pointer;position:relative;display:flex;flex-direction:column;align-items:center;gap:5px;padding:0 4px}.trail-stop summary::-webkit-details-marker{display:none}.trail-stop summary:focus-visible{outline:2px solid var(--coral);outline-offset:4px;border-radius:8px}.trail-index{font-size:8px;letter-spacing:1px;color:var(--hub-quiet);margin-bottom:5px}.trail-seal{display:grid;place-items:center;width:48px;height:54px;background:var(--hub-soft);border:1px solid var(--hub-rule);border-radius:40% 40% 48% 48%;position:relative;box-shadow:inset 0 0 0 4px var(--hub-paper);margin-bottom:9px}.trail-seal .type-icon{width:23px;height:23px;opacity:.6;filter:grayscale(1)}.trail-seal i{position:absolute;right:-4px;bottom:0;background:var(--green);color:var(--white);border:2px solid var(--hub-paper);border-radius:50%;width:18px;height:18px;display:grid;place-items:center}.earned .trail-seal,.current .trail-seal{background:color-mix(in srgb,var(--badge-color) 18%,var(--hub-paper));border-color:var(--badge-color)}.earned .type-icon,.current .type-icon{filter:none;opacity:1}.current .trail-seal{outline:2px solid var(--coral);outline-offset:4px}.trail-name{font:500 10px/1.3 var(--display);min-height:27px;max-width:90px}.trail-rp{font-size:8px;color:var(--hub-quiet)}.trail-status{font-size:7px;letter-spacing:.3px;color:var(--hub-quiet);margin-top:2px}.current .trail-status{color:var(--coral-hover);font-weight:700}.trail-stop>p{font-size:9px;color:var(--hub-quiet);line-height:1.5;margin:8px 4px 0}.trail-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--hub-rule);padding-top:16px;margin-top:22px;font-size:10px;color:var(--hub-quiet)}.trail-footer i{font-style:normal;margin:0 8px}.five-section-shell .raid-hero{min-height:280px;padding:25px 30px}.five-section-shell .raid-content h2{font-size:38px;margin:14px 0}.five-section-shell .raid-content>p{font-size:11px}.five-section-shell .raid-hp{margin:16px 0;width:320px;max-width:100%}.five-section-shell .raid-content .hero-badge{font-size:8px}.five-section-shell .raid-content>small{font-size:9px}.five-section-shell .raid-content .button{min-height:40px}.five-section-shell .raid-boss{height:95%;width:40%;top:0;right:5%}.five-section-shell .raid-locked{margin-top:0}.raid-handbook .raid-rules{margin-top:20px}.five-section-shell .raid-reward-panel{margin:18px 0}.five-section-shell .raid-reward-panel p{font-size:12px}.five-section-shell .raid-pool-card{padding:10px}.five-section-shell .raid-pool-card img{width:74px;height:74px}
 .shop-bag-count{font:500 22px var(--display);text-align:right;white-space:nowrap}.shop-bag-count small{display:block;color:var(--hub-quiet);font:500 7px var(--body);letter-spacing:1.4px;margin-top:5px}.shop-hub-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.85fr);gap:22px;align-items:start}.pack-counter,.research-counter{background:var(--hub-paper);border:1px solid var(--hub-rule);border-radius:16px;padding:24px;min-width:0}.pack-counter .section-header,.research-counter .section-header{margin:0 0 20px;gap:12px}.pack-counter .eyebrow,.research-counter .eyebrow{font-size:8px;color:var(--hub-quiet)}.pack-counter h2,.research-counter h2{font-size:24px;margin-top:5px}.pack-counter .tag{font-size:8px;white-space:nowrap}.counter-pack{display:flex;gap:24px;padding:22px 0;border-top:1px solid var(--hub-rule);align-items:center}.counter-pack-art{background:var(--hub-coral-soft);border-radius:12px;min-width:135px;min-height:174px;display:grid;place-items:center}.counter-pack.silver .counter-pack-art{background:var(--hub-soft)}.mini-pack.poke{background:var(--coral-hover)}.mini-pack.silver{background:var(--green);transform:rotate(7deg)}.counter-pack-copy .eyebrow{font-size:7px}.counter-pack-copy h3{font-size:25px;margin:5px 0 9px}.counter-pack-copy p{font-size:11px;color:var(--hub-quiet);line-height:1.7;max-width:290px}.pack-traits{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.pack-traits span{font-size:9px;border:1px solid var(--hub-rule);padding:4px 7px;border-radius:5px;color:var(--hub-quiet)}.counter-pack-copy .button{font-size:11px;min-height:39px;padding:10px 15px}.counter-daily{display:flex;align-items:center;gap:12px;background:var(--hub-soft);border-radius:10px;padding:15px;margin-top:4px}.counter-daily b{font:500 16px var(--display)}.counter-daily p{font-size:10px;color:var(--hub-quiet);margin-top:3px}.counter-daily .button{margin-left:auto;font-size:10px;min-height:34px;padding:8px 10px}.counter-daily .daily-clock{margin:6px 0 0;font-size:8px;color:var(--hub-quiet)}.daily-gift-icon{color:var(--green)}.research-counter{background:var(--hub-soft)}.research-counter .section-header{margin-bottom:12px}.research-ready{font-size:9px;background:var(--green);color:var(--paper);border-radius:20px;padding:6px 10px;white-space:nowrap}.research-intro{font-size:11px;color:var(--hub-quiet);margin-bottom:20px}.research-task{display:flex;gap:12px;border-top:1px solid var(--hub-rule);padding:18px 0}.research-icon{width:34px;height:34px;border:1px solid var(--hub-rule);background:var(--hub-paper);display:grid;place-items:center;border-radius:50%;flex-shrink:0}.research-copy{flex:1;min-width:0}.research-copy h3{font-size:16px;letter-spacing:-.2px}.research-copy>p{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:var(--hub-quiet);margin:6px 0 9px}.research-copy .progress{height:3px;background:var(--hub-rule)}.research-reward{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:7px;font-size:10px}.research-reward i{font-style:normal;color:var(--hub-quiet);margin-left:5px}.research-reward .text-button{font-size:9px;padding:4px 0}.research-task.ready .research-icon{background:var(--green);color:var(--paper)}.research-task.claimed .research-icon{background:var(--hub-light);border-color:var(--hub-light)}.research-note{display:flex;align-items:center;gap:12px;color:var(--hub-quiet);border-top:1px solid var(--hub-rule);padding-top:14px;font-size:10px}.research-note .text-button{font-size:10px;padding:2px 0}.shop-guide{border-top:1px solid var(--hub-rule);margin-top:24px;padding-top:18px}.shop-guide>summary{display:flex;align-items:center;gap:16px;list-style:none;cursor:pointer;font:500 18px var(--display)}.shop-guide summary::-webkit-details-marker{display:none}.shop-guide>summary small{margin-left:auto;font:400 11px var(--body);color:var(--hub-quiet)}.shop-guide[open]>summary svg{transform:rotate(90deg)}.shop-guide-copy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:24px 0}.shop-guide-copy p{font-size:11px;color:var(--hub-quiet)}
-@media(min-width:1101px) and (max-height:880px){.battle-dashboard .topbar{height:58px}.battle-dashboard .main-shell main{padding:20px 26px}.battle-dashboard .hub-heading{margin-bottom:16px}.battle-dashboard .hub-heading h1{font-size:27px}.battle-dashboard .hub-heading p{margin-top:4px}.battle-hub-grid{grid-template-rows:minmax(220px,1fr) 195px;gap:14px}.arena-feature-copy{padding:20px 24px 15px}.arena-feature h2{font-size:33px;margin:12px 0 8px}.arena-feature-copy p{margin-bottom:13px}.arena-reward{margin-top:9px}.arena-progress{padding:12px 20px}.discovery-feature{padding:16px 20px}.discovery-art{margin:8px auto;min-height:80px}.discovery-art .mini-pack{width:66px;height:94px;gap:6px}.discovery-art .mini-pack b{font-size:9px}.discovery-art .mini-pack .pack-pokeball{width:26px;height:26px}.discovery-art .mini-pack .pack-pokeball:before{top:10px}.discovery-art .mini-pack .pack-pokeball:after{top:6px;left:6px}.discovery-feature h2{font-size:19px}.discovery-feature p{margin-bottom:8px}.squad-feature{padding:13px 20px 10px}.squad-feature .coin{width:min(100%,72px)}.squad-feature .section-header{margin-bottom:6px}.squad-feature h2{font-size:20px}.squad-foot{margin-top:7px;padding-top:6px}.practice-feature{padding:20px}.practice-feature h2{font-size:22px}.trainer-strip{padding-top:13px}.battle-dashboard footer{padding-bottom:12px}}
-@media(max-width:1200px) and (min-width:901px){.five-section-shell .sidebar{width:190px;padding-inline:14px}.five-section-shell .main-shell{margin-left:190px;width:calc(100% - 190px)}.five-section-shell .brand strong{font-size:18px}.five-section-shell .brand small{font-size:6px}.five-section-shell .main-shell main{padding:22px}.battle-hub-grid{grid-template-columns:minmax(0,1fr) 225px}.arena-feature h2{font-size:31px}.arena-feature-copy{width:78%;padding:24px}.arena-progress{gap:12px}.arena-progress>div:first-child{min-width:125px}.shop-hub-grid{gap:16px;grid-template-columns:1fr 340px}.pack-counter,.research-counter{padding:20px}.counter-pack{gap:16px}.counter-pack-art{min-width:98px}.counter-pack-copy h3{font-size:22px}.badge-trail{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:24px}.trail-stop:nth-child(6):before{display:none}}
-@media(max-width:900px){.five-section-shell .sidebar{width:76px;padding:22px 10px}.five-section-shell .main-shell{margin-left:76px;width:calc(100% - 76px)}.five-section-shell .main-shell main{padding:24px}.five-section-shell .nav-item{padding:14px;justify-content:center}.five-section-shell .brand{margin:0 auto 30px;justify-content:center}.five-section-shell .brand>span:last-child,.five-section-shell .nav-item>span,.five-section-shell .nav-item>small,.five-section-shell .nav-caption,.five-section-shell .field-note,.five-section-shell .profile{display:none}.five-section-shell .nav-item .nav-dot{display:none}.five-section-shell .sidebar-bottom{padding-top:20px}.five-section-shell .topbar{padding-inline:24px}.battle-hub-grid{grid-template-columns:minmax(0,1fr) 220px;grid-template-rows:auto 210px;gap:14px}.battle-dashboard .battle-hub-grid{max-height:none;flex:0}.battle-dashboard main{flex:0}.arena-feature-copy{width:100%;padding:24px}.arena-feature h2{font-size:31px}.arena-feature-art{opacity:.38;right:-13%;width:60%}.arena-progress{padding:14px 20px;gap:12px}.arena-progress>div:first-child{min-width:110px}.arena-progress b{font-size:10px}.arena-progress-meter span{display:none}.squad-feature{grid-column:1 / -1;grid-row:2;padding:16px 22px}.practice-feature{grid-column:1 / -1;grid-row:3;padding:20px 22px;display:grid;grid-template-columns:1fr auto;gap:4px 20px}.practice-feature .eyebrow{grid-column:1}.practice-feature h2{margin:3px 0;font-size:22px}.practice-feature p{grid-column:1}.practice-feature p br{display:none}.practice-feature .text-button{grid-column:2;grid-row:1 / 4;align-self:center;margin:0}.practice-icon{display:none}.trainer-strip{gap:18px;flex-wrap:wrap;padding-top:18px}.trainer-strip .trainer-expedition{display:none}.discovery-feature{padding:20px 16px}.discovery-feature h2{font-size:19px}.hub-heading h1{font-size:27px}.hub-heading>.text-button{font-size:10px}.badge-trail{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:24px}.trail-stop:nth-child(6):before{display:none}.shop-hub-grid{grid-template-columns:1fr}.pack-counter{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.pack-counter>.section-header,.counter-daily{grid-column:1 / -1}.counter-pack{flex-direction:column;align-items:flex-start;gap:16px;padding:20px 0}.counter-pack-art{width:100%;min-height:174px}.counter-pack-copy p{max-width:none}.counter-pack-copy .button{width:100%}.research-list{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.research-note{margin-top:8px}.shop-guide-copy{grid-template-columns:1fr;gap:12px}.gym-trail h2{font-size:24px}}
-@media(max-width:600px){.five-section-shell .sidebar{position:fixed;top:auto;bottom:0;left:0;right:0;inset:auto 0 0;width:100%;height:68px;padding:0;background:var(--hub-paper);border-top:1px solid var(--hub-rule);overflow:visible}.five-section-shell .sidebar .brand,.five-section-shell .sidebar-bottom{display:none}.five-section-shell .sidebar nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;height:100%;gap:0;padding:5px 3px}.five-section-shell .sidebar .nav-item{display:flex;flex-direction:column;justify-content:center;gap:5px;padding:7px 2px;margin:0;font-size:9px;border-radius:8px}.five-section-shell .sidebar .nav-item>span:not(.nav-dot){display:block}.five-section-shell .sidebar .nav-item svg{width:19px;height:19px}.five-section-shell .sidebar .nav-item.active{background:var(--hub-soft);color:var(--green);box-shadow:none}.five-section-shell .main-shell{margin-left:0;width:100%;padding-bottom:68px}.five-section-shell .topbar{height:58px;padding:0 16px}.five-section-shell .main-shell main{padding:22px 16px}.five-section-shell footer{padding:0 16px 16px;font-size:8px;flex-wrap:wrap}.hub-heading{gap:12px;margin-bottom:20px}.hub-heading h1{font-size:26px;line-height:1.1;max-width:290px}.hub-heading p{font-size:11px;margin-top:8px}.hub-heading .eyebrow{font-size:7px}.hub-heading>.text-button{font-size:0;padding:8px}.hub-heading>.text-button svg{width:20px;height:20px}.battle-hub-grid{grid-template-columns:1fr;grid-template-rows:auto;gap:14px}.arena-feature{grid-column:1;grid-row:1}.arena-feature-copy{padding:25px 22px;min-height:251px}.arena-feature h2{font-size:34px;max-width:300px}.arena-feature-copy p{max-width:210px;font-size:11px}.arena-feature-art{width:55%;right:-16%;opacity:.35}.arena-feature .hero-badge{font-size:7px}.arena-feature .arena-progress{padding:14px 20px}.arena-progress-meter span{display:block}.squad-feature{grid-column:1;grid-row:2;padding:18px 16px 12px}.squad-feature .section-header{margin-bottom:17px}.squad-feature .section-header .text-button{font-size:10px}.squad-feature .team-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 12px}.squad-feature .medallion{width:100%}.squad-feature .coin{width:76px}.squad-feature .med-name{font-size:11px}.squad-feature .med-power{font-size:8px}.squad-foot{margin-top:15px;padding-top:12px;font-size:9px}.squad-foot small{font-size:6px}.practice-feature{grid-column:1;grid-row:3;padding:20px;display:flex;gap:0}.practice-feature h2{margin:9px 0;font-size:23px}.practice-feature p{font-size:12px}.practice-feature .text-button{margin-top:15px;align-self:flex-start}.practice-icon{display:block}.discovery-feature{grid-column:1;grid-row:4;display:grid;grid-template-columns:86px 1fr;gap:0 14px;padding:20px;text-align:left;align-items:center}.discovery-top{grid-column:1 / -1;margin-bottom:15px}.discovery-art{grid-row:2 / 5;margin:0;min-height:112px}.discovery-art .mini-pack{width:64px;height:98px;gap:6px}.discovery-art .mini-pack b{font-size:9px}.discovery-art>i{right:-4px;font-size:16px;top:-5px}.discovery-feature h2{font-size:20px}.discovery-feature p{font-size:10px;margin:6px 0 12px}.discovery-feature .daily-clock{grid-column:1 / -1;margin-top:16px;justify-content:center;font-size:10px}.trainer-strip{justify-content:space-between;gap:10px;font-size:9px}.trainer-strip>span,.trainer-strip>button{font-size:9px;gap:5px}.trainer-strip b{font-size:12px}.trainer-strip svg{width:14px;height:14px}.gym-trail{padding:22px 17px;margin:18px 0}.gym-trail-heading{align-items:flex-start;gap:14px}.gym-trail h2{font-size:23px;line-height:1.1}.gym-trail-heading p{font-size:10px;max-width:220px}.trail-tally>b{font-size:30px}.trail-tally small{font-size:15px}.trail-tally>span{font-size:5px;letter-spacing:.5px}.badge-trail{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 4px;margin-top:28px}.trail-stop:nth-child(3n):before{display:none}.trail-name{font-size:12px;min-height:31px}.trail-rp{font-size:9px}.trail-status{font-size:8px}.trail-stop>p{font-size:10px}.trail-seal{width:52px;height:58px}.trail-stop:before{top:51px}.trail-footer{flex-direction:column;align-items:flex-start;gap:4px}.trail-footer .text-button{font-size:11px}.five-section-shell .raid-hero{padding:22px;display:flex;flex-direction:column}.five-section-shell .raid-boss{position:static;width:150px;height:140px;order:-1;align-self:center;opacity:1;margin:0 auto 12px}.five-section-shell .raid-content h2{font-size:34px}.five-section-shell .raid-content>p{font-size:12px}.five-section-shell .raid-hp{width:100%;padding:12px}.five-section-shell .raid-content .button{min-height:44px}.five-section-shell .raid-reward-panel{padding:20px 17px}.five-section-shell .raid-reward-panel p{font-size:12px}.shop-bag-count{font-size:17px}.shop-bag-count small{font-size:6px}.pack-counter,.research-counter{padding:20px 17px}.pack-counter{display:block}.pack-counter .section-header{flex-wrap:wrap;gap:10px}.pack-counter h2,.research-counter h2{font-size:23px}.counter-pack{flex-direction:row;gap:17px;align-items:center}.counter-pack-art{width:90px;min-width:90px;min-height:160px}.counter-pack-art .mini-pack{width:65px;height:106px;gap:7px}.counter-pack-art .mini-pack b{font-size:10px}.counter-pack-copy h3{font-size:21px}.counter-pack-copy p{font-size:10px}.counter-pack-copy .eyebrow{font-size:6px;letter-spacing:.8px}.pack-traits{gap:4px;margin:9px 0}.pack-traits span{font-size:8px;padding:4px}.counter-pack-copy .button{font-size:10px;padding:10px;min-height:40px}.counter-daily{flex-wrap:wrap;padding:15px;gap:10px}.counter-daily .button{width:100%;margin-top:3px}.counter-daily .daily-clock{font-size:9px}.research-list{display:block}.research-copy h3{font-size:17px}.research-task{padding:20px 0}.research-copy>p,.research-reward{font-size:11px}.research-reward .text-button{font-size:10px}.shop-guide>summary{flex-wrap:wrap;font-size:17px;gap:8px}.shop-guide>summary small{order:3;width:100%;margin:0;font-size:10px}.shop-guide>summary svg{margin-left:auto}.shop-guide .milestone-grid{grid-template-columns:1fr}}
-@media(max-width:600px){.five-section-shell .sidebar .nav-item>span:not(.nav-dot){font-size:9px}.five-section-shell .sidebar .nav-item>span:after{content:none}}
+@media (max-height:880px) {@container game (min-width:1101px) {.battle-dashboard .topbar{height:58px}.battle-dashboard .main-shell main{padding:20px 26px}.battle-dashboard .hub-heading{margin-bottom:16px}.battle-dashboard .hub-heading h1{font-size:27px}.battle-dashboard .hub-heading p{margin-top:4px}.battle-hub-grid{grid-template-rows:minmax(220px,1fr) 195px;gap:14px}.arena-feature-copy{padding:20px 24px 15px}.arena-feature h2{font-size:33px;margin:12px 0 8px}.arena-feature-copy p{margin-bottom:13px}.arena-reward{margin-top:9px}.arena-progress{padding:12px 20px}.discovery-feature{padding:16px 20px}.discovery-art{margin:8px auto;min-height:80px}.discovery-art .mini-pack{width:66px;height:94px;gap:6px}.discovery-art .mini-pack b{font-size:9px}.discovery-art .mini-pack .pack-pokeball{width:26px;height:26px}.discovery-art .mini-pack .pack-pokeball:before{top:10px}.discovery-art .mini-pack .pack-pokeball:after{top:6px;left:6px}.discovery-feature h2{font-size:19px}.discovery-feature p{margin-bottom:8px}.squad-feature{padding:13px 20px 10px}.squad-feature .coin{width:min(100%,72px)}.squad-feature .section-header{margin-bottom:6px}.squad-feature h2{font-size:20px}.squad-foot{margin-top:7px;padding-top:6px}.practice-feature{padding:20px}.practice-feature h2{font-size:22px}.trainer-strip{padding-top:13px}.battle-dashboard footer{padding-bottom:12px}}}
+@container game (max-width:1200px) and (min-width:901px) {.five-section-shell .sidebar{width:190px;padding-inline:14px}.five-section-shell .main-shell{margin-left:190px;width:calc(100% - 190px)}.five-section-shell .brand strong{font-size:18px}.five-section-shell .brand small{font-size:6px}.five-section-shell .main-shell main{padding:22px}.battle-hub-grid{grid-template-columns:minmax(0,1fr) 225px}.arena-feature h2{font-size:31px}.arena-feature-copy{width:78%;padding:24px}.arena-progress{gap:12px}.arena-progress>div:first-child{min-width:125px}.shop-hub-grid{gap:16px;grid-template-columns:1fr 340px}.pack-counter,.research-counter{padding:20px}.counter-pack{gap:16px}.counter-pack-art{min-width:98px}.counter-pack-copy h3{font-size:22px}.badge-trail{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:24px}.trail-stop:nth-child(6):before{display:none}}
+@container game (max-width:900px) {.five-section-shell .sidebar{width:76px;padding:22px 10px}.five-section-shell .main-shell{margin-left:76px;width:calc(100% - 76px)}.five-section-shell .main-shell main{padding:24px}.five-section-shell .nav-item{padding:14px;justify-content:center}.five-section-shell .brand{margin:0 auto 30px;justify-content:center}.five-section-shell .brand>span:last-child,.five-section-shell .nav-item>span,.five-section-shell .nav-item>small,.five-section-shell .nav-caption,.five-section-shell .field-note,.five-section-shell .profile{display:none}.five-section-shell .nav-item .nav-dot{display:none}.five-section-shell .sidebar-bottom{padding-top:20px}.five-section-shell .topbar{padding-inline:24px}.battle-hub-grid{grid-template-columns:minmax(0,1fr) 220px;grid-template-rows:auto 210px;gap:14px}.battle-dashboard .battle-hub-grid{max-height:none;flex:0}.battle-dashboard main{flex:0}.arena-feature-copy{width:100%;padding:24px}.arena-feature h2{font-size:31px}.arena-feature-art{opacity:.38;right:-13%;width:60%}.arena-progress{padding:14px 20px;gap:12px}.arena-progress>div:first-child{min-width:110px}.arena-progress b{font-size:10px}.arena-progress-meter span{display:none}.squad-feature{grid-column:1 / -1;grid-row:2;padding:16px 22px}.practice-feature{grid-column:1 / -1;grid-row:3;padding:20px 22px;display:grid;grid-template-columns:1fr auto;gap:4px 20px}.practice-feature .eyebrow{grid-column:1}.practice-feature h2{margin:3px 0;font-size:22px}.practice-feature p{grid-column:1}.practice-feature p br{display:none}.practice-feature .text-button{grid-column:2;grid-row:1 / 4;align-self:center;margin:0}.practice-icon{display:none}.trainer-strip{gap:18px;flex-wrap:wrap;padding-top:18px}.trainer-strip .trainer-expedition{display:none}.discovery-feature{padding:20px 16px}.discovery-feature h2{font-size:19px}.hub-heading h1{font-size:27px}.hub-heading>.text-button{font-size:10px}.badge-trail{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:24px}.trail-stop:nth-child(6):before{display:none}.shop-hub-grid{grid-template-columns:1fr}.pack-counter{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.pack-counter>.section-header,.counter-daily{grid-column:1 / -1}.counter-pack{flex-direction:column;align-items:flex-start;gap:16px;padding:20px 0}.counter-pack-art{width:100%;min-height:174px}.counter-pack-copy p{max-width:none}.counter-pack-copy .button{width:100%}.research-list{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.research-note{margin-top:8px}.shop-guide-copy{grid-template-columns:1fr;gap:12px}.gym-trail h2{font-size:24px}}
+@container game (max-width:600px) {.five-section-shell .sidebar{position:fixed;top:auto;bottom:0;left:0;right:0;inset:auto 0 0;width:100%;height:68px;padding:0;background:var(--hub-paper);border-top:1px solid var(--hub-rule);overflow:visible}.five-section-shell .sidebar .brand,.five-section-shell .sidebar-bottom{display:none}.five-section-shell .sidebar nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;height:100%;gap:0;padding:5px 3px}.five-section-shell .sidebar .nav-item{display:flex;flex-direction:column;justify-content:center;gap:5px;padding:7px 2px;margin:0;font-size:9px;border-radius:8px}.five-section-shell .sidebar .nav-item>span:not(.nav-dot){display:block}.five-section-shell .sidebar .nav-item svg{width:19px;height:19px}.five-section-shell .sidebar .nav-item.active{background:var(--hub-soft);color:var(--green);box-shadow:none}.five-section-shell .main-shell{margin-left:0;width:100%;padding-bottom:68px}.five-section-shell .topbar{height:58px;padding:0 16px}.five-section-shell .main-shell main{padding:22px 16px}.five-section-shell footer{padding:0 16px 16px;font-size:8px;flex-wrap:wrap}.hub-heading{gap:12px;margin-bottom:20px}.hub-heading h1{font-size:26px;line-height:1.1;max-width:290px}.hub-heading p{font-size:11px;margin-top:8px}.hub-heading .eyebrow{font-size:7px}.hub-heading>.text-button{font-size:0;padding:8px}.hub-heading>.text-button svg{width:20px;height:20px}.battle-hub-grid{grid-template-columns:1fr;grid-template-rows:auto;gap:14px}.arena-feature{grid-column:1;grid-row:1}.arena-feature-copy{padding:25px 22px;min-height:251px}.arena-feature h2{font-size:34px;max-width:300px}.arena-feature-copy p{max-width:210px;font-size:11px}.arena-feature-art{width:55%;right:-16%;opacity:.35}.arena-feature .hero-badge{font-size:7px}.arena-feature .arena-progress{padding:14px 20px}.arena-progress-meter span{display:block}.squad-feature{grid-column:1;grid-row:2;padding:18px 16px 12px}.squad-feature .section-header{margin-bottom:17px}.squad-feature .section-header .text-button{font-size:10px}.squad-feature .team-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 12px}.squad-feature .medallion{width:100%}.squad-feature .coin{width:76px}.squad-feature .med-name{font-size:11px}.squad-feature .med-power{font-size:8px}.squad-foot{margin-top:15px;padding-top:12px;font-size:9px}.squad-foot small{font-size:6px}.practice-feature{grid-column:1;grid-row:3;padding:20px;display:flex;gap:0}.practice-feature h2{margin:9px 0;font-size:23px}.practice-feature p{font-size:12px}.practice-feature .text-button{margin-top:15px;align-self:flex-start}.practice-icon{display:block}.discovery-feature{grid-column:1;grid-row:4;display:grid;grid-template-columns:86px 1fr;gap:0 14px;padding:20px;text-align:left;align-items:center}.discovery-top{grid-column:1 / -1;margin-bottom:15px}.discovery-art{grid-row:2 / 5;margin:0;min-height:112px}.discovery-art .mini-pack{width:64px;height:98px;gap:6px}.discovery-art .mini-pack b{font-size:9px}.discovery-art>i{right:-4px;font-size:16px;top:-5px}.discovery-feature h2{font-size:20px}.discovery-feature p{font-size:10px;margin:6px 0 12px}.discovery-feature .daily-clock{grid-column:1 / -1;margin-top:16px;justify-content:center;font-size:10px}.trainer-strip{justify-content:space-between;gap:10px;font-size:9px}.trainer-strip>span,.trainer-strip>button{font-size:9px;gap:5px}.trainer-strip b{font-size:12px}.trainer-strip svg{width:14px;height:14px}.gym-trail{padding:22px 17px;margin:18px 0}.gym-trail-heading{align-items:flex-start;gap:14px}.gym-trail h2{font-size:23px;line-height:1.1}.gym-trail-heading p{font-size:10px;max-width:220px}.trail-tally>b{font-size:30px}.trail-tally small{font-size:15px}.trail-tally>span{font-size:5px;letter-spacing:.5px}.badge-trail{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 4px;margin-top:28px}.trail-stop:nth-child(3n):before{display:none}.trail-name{font-size:12px;min-height:31px}.trail-rp{font-size:9px}.trail-status{font-size:8px}.trail-stop>p{font-size:10px}.trail-seal{width:52px;height:58px}.trail-stop:before{top:51px}.trail-footer{flex-direction:column;align-items:flex-start;gap:4px}.trail-footer .text-button{font-size:11px}.five-section-shell .raid-hero{padding:22px;display:flex;flex-direction:column}.five-section-shell .raid-boss{position:static;width:150px;height:140px;order:-1;align-self:center;opacity:1;margin:0 auto 12px}.five-section-shell .raid-content h2{font-size:34px}.five-section-shell .raid-content>p{font-size:12px}.five-section-shell .raid-hp{width:100%;padding:12px}.five-section-shell .raid-content .button{min-height:44px}.five-section-shell .raid-reward-panel{padding:20px 17px}.five-section-shell .raid-reward-panel p{font-size:12px}.shop-bag-count{font-size:17px}.shop-bag-count small{font-size:6px}.pack-counter,.research-counter{padding:20px 17px}.pack-counter{display:block}.pack-counter .section-header{flex-wrap:wrap;gap:10px}.pack-counter h2,.research-counter h2{font-size:23px}.counter-pack{flex-direction:row;gap:17px;align-items:center}.counter-pack-art{width:90px;min-width:90px;min-height:160px}.counter-pack-art .mini-pack{width:65px;height:106px;gap:7px}.counter-pack-art .mini-pack b{font-size:10px}.counter-pack-copy h3{font-size:21px}.counter-pack-copy p{font-size:10px}.counter-pack-copy .eyebrow{font-size:6px;letter-spacing:.8px}.pack-traits{gap:4px;margin:9px 0}.pack-traits span{font-size:8px;padding:4px}.counter-pack-copy .button{font-size:10px;padding:10px;min-height:40px}.counter-daily{flex-wrap:wrap;padding:15px;gap:10px}.counter-daily .button{width:100%;margin-top:3px}.counter-daily .daily-clock{font-size:9px}.research-list{display:block}.research-copy h3{font-size:17px}.research-task{padding:20px 0}.research-copy>p,.research-reward{font-size:11px}.research-reward .text-button{font-size:10px}.shop-guide>summary{flex-wrap:wrap;font-size:17px;gap:8px}.shop-guide>summary small{order:3;width:100%;margin:0;font-size:10px}.shop-guide>summary svg{margin-left:auto}.shop-guide .milestone-grid{grid-template-columns:1fr}}
+@container game (max-width:600px) {.five-section-shell .sidebar .nav-item>span:not(.nav-dot){font-size:9px}.five-section-shell .sidebar .nav-item>span:after{content:none}}
 .squad-feature .medallion{width:100%}.arena-feature-art{overflow:hidden}.arena-feature-art>img{width:100%;height:100%;max-height:100%;transform:rotate(-5deg)}
-@media(min-width:1101px) and (max-height:740px){.battle-dashboard .main-shell main{padding:16px 26px}.battle-dashboard .hub-heading p{display:none}.battle-dashboard .hub-heading{margin-bottom:12px}.battle-dashboard .sidebar .field-note{display:none}.battle-dashboard .sidebar-bottom{padding-top:12px}}
+@media (max-height:740px) {@container game (min-width:1101px) {.battle-dashboard .main-shell main{padding:16px 26px}.battle-dashboard .hub-heading p{display:none}.battle-dashboard .hub-heading{margin-bottom:12px}.battle-dashboard .sidebar .field-note{display:none}.battle-dashboard .sidebar-bottom{padding-top:12px}}}
 .squad-feature .team-row{min-height:0}.squad-feature .medallion .coin{width:min(100%,78px);margin-bottom:7px}.squad-feature .med-name{margin-top:3px;line-height:1.2}.squad-foot{flex-shrink:0}.squad-feature .medallion{line-height:1.2}
-@media(min-width:1101px) and (max-height:880px){.squad-feature .medallion .coin{width:min(100%,66px)}}
-@media(max-width:600px){.squad-feature .medallion .coin{width:76px;margin-bottom:9px}}
-@media(min-width:601px) and (max-height:880px){.five-section-shell .field-note{display:none}}
-@media(max-width:600px){.research-reward .text-button{min-height:40px}}
+@media (max-height:880px) {@container game (min-width:1101px) {.squad-feature .medallion .coin{width:min(100%,66px)}}}
+@container game (max-width:600px) {.squad-feature .medallion .coin{width:76px;margin-bottom:9px}}
+@media (max-height:880px) {@container game (min-width:601px) {.five-section-shell .field-note{display:none}}}
+@container game (max-width:600px) {.research-reward .text-button{min-height:40px}}
 
-@media (min-width: 901px) {
+@container game (min-width: 901px) {
   .battle-hub-grid {
     grid-template-rows: minmax(220px, 1fr) auto;
   }
@@ -36,21 +36,21 @@
     width: min(94%, 108px);
   }
 }
-@media (min-width: 1101px) and (max-height: 880px) {
+@media (max-height: 880px) {@container game (min-width: 1101px) {
   .squad-feature .team-row { max-width: 660px; }
   .squad-feature .medallion .coin { width: min(94%, 94px); }
-}
-@media (min-width: 901px) {
+}}
+@container game (min-width: 901px) {
   .squad-feature .section-header .text-button { padding-block: 4px; }
   .squad-feature .section-header .eyebrow { margin: 0; }
   .battle-dashboard .hub-heading { margin-bottom: 10px; }
 }
-@media (min-width: 1101px) and (max-height: 740px) {
+@media (max-height: 740px) {@container game (min-width: 1101px) {
   .battle-dashboard .main-shell main { padding-block: 10px; }
-}
+}}
 
 /* Phone Battle uses the same four cards, with the two side cards paired below the team. */
-@media (max-width: 600px) {
+@container game (max-width: 600px) {
   .battle-dashboard .main-shell main { padding: 14px 12px; }
   .battle-hub .hub-heading { margin-bottom: 12px; }
   .battle-hub .hub-heading h1 { font-size: 23px; }
@@ -96,7 +96,7 @@
   .practice-feature .text-button { margin-top: 10px; }
 }
 
-@media (max-width: 600px) {
+@container game (max-width: 600px) {
   .collection-grid, .pokedex-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 6px;
@@ -126,7 +126,7 @@
   .dex-entry-foot { margin-top: 6px; padding-top: 5px; font-size: 8px; line-height: 1.25; }
 }
 
-@media (max-width: 600px) {
+@container game (max-width: 600px) {
   .five-section-shell .raid-hero { display: block; min-height: 0; padding: 14px; }
   .raid-hero .raid-content { width: 64%; }
   .five-section-shell .raid-hero .raid-boss {
@@ -169,7 +169,7 @@
   .research-copy > p, .research-reward { font-size: 10px; flex-wrap: wrap; gap: 4px; }
 }
 
-@media (max-width: 600px) {
+@container game (max-width: 600px) {
   .battle-dashboard .topbar { height: 44px; }
   .battle-dashboard .main-shell main { padding: 8px 12px; }
   .battle-hub .hub-heading { margin-bottom: 8px; }
@@ -208,14 +208,14 @@
   .battle-dashboard .trainer-strip { padding-top: 8px; }
   .battle-dashboard footer { padding-bottom: 7px; font-size: 7px; }
 }
-@media (max-width: 600px) and (max-height: 760px) {
+@media (max-height: 760px) {@container game (max-width: 600px) {
   .battle-dashboard .battle-hub-grid { zoom: .82; }
   .battle-dashboard .trainer-strip { padding-top: 5px; }
   .battle-dashboard .hub-heading { margin-bottom: 5px; }
-}
+}}
 
 /* Desktop destination hubs keep primary actions in the viewport. */
-@media (min-width: 1101px) {
+@container game (min-width: 1101px) {
   .raids-page .main-shell main, .shop-page .main-shell main { padding: 14px 24px; }
   .raids-page .page-heading, .shop-page .hub-heading { margin-bottom: 12px; }
   .raids-page .page-heading h1, .shop-page .hub-heading h1 { font-size: 27px; }
@@ -283,15 +283,15 @@
   .shop-page .shop-guide { margin-top: 10px; padding-top: 10px; }
   .shop-page .shop-guide[open] { max-height: 240px; overflow: auto; }
 }
-@media (min-width: 1101px) {
+@container game (min-width: 1101px) {
   .raids-page .main-shell main { zoom: 1; }
   .raids-page .raid-pool { grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); }
 }
-@media (min-width: 1101px) and (max-height: 800px) {
+@media (max-height: 800px) {@container game (min-width: 1101px) {
   .shop-page .main-shell main { zoom: .84; }
-}
+}}
 
-@media (min-width: 1101px) {
+@container game (min-width: 1101px) {
   .raids-page main { gap: 10px 16px; }
   .raids-page .page-heading { margin-bottom: 0; }
   .raids-page .raid-hero { padding: 18px 22px; }
@@ -317,7 +317,7 @@
   .raids-page details.raid-reward-panel { padding: 8px 12px; font-size: 12px; }
 }
 .raid-utilities { min-width: 0; }
-@media (min-width: 1101px) {
+@container game (min-width: 1101px) {
   .raids-page .raid-utilities {
     grid-column: 1 / -1;
     display: grid;
@@ -330,14 +330,14 @@
   .raids-page .raid-utilities h3 { font-size: 14px; }
   .raids-page .raid-utilities .raid-rules { grid-template-columns: 1fr; }
 }
-@media (min-width: 1101px) {
+@container game (min-width: 1101px) {
   .raids-page .gym-trail .trail-footer .text-button { padding-block: 3px; }
   .raids-page .gym-trail .trail-stop summary { gap: 2px; }
   .raids-page .gym-trail .trail-name { min-height: 26px; }
   .raids-page .gym-trail .trail-tally > span { margin-top: 3px; }
   .raids-page .gym-trail .trail-seal { margin-bottom: 2px; }
 }
-@media (min-width: 1101px) and (max-height: 800px) {
+@media (max-height: 800px) {@container game (min-width: 1101px) {
   .raids-page .main-shell main { padding-block: 8px; }
   .raids-page .page-heading h1 { font-size: 24px; }
   .raids-page .raid-hero { padding: 12px 18px; }
@@ -349,12 +349,12 @@
   .raids-page .trail-stop > p { font-size: 7px; line-height: 1.2; }
   .raids-page .raid-pool-card img { height: 62px; }
   .raids-page .page-heading p { font-size: 10px; }
-}
-@media (min-width: 1101px) and (max-height: 800px) {
+}}
+@media (max-height: 800px) {@container game (min-width: 1101px) {
   .raids-page .main-shell main { zoom: .86; }
-}
+}}
 
-@media (max-width: 600px) {
+@container game (max-width: 600px) {
   .raids-page .raid-pool {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 4px;
@@ -377,7 +377,7 @@
 }
 
 /* Reserve a visible row for the inbox and every raid information panel. */
-@media (min-width: 901px) {
+@container game (min-width: 901px) {
   .raids-page .main-shell {
     height: 100dvh;
     display: flex;
@@ -420,7 +420,7 @@
   .raids-page .raid-utilities .raid-inbox { max-height: none; overflow: visible; }
   .raids-page .raid-pool { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 }
-@media (min-width: 901px) and (max-height: 800px) {
+@media (max-height: 800px) {@container game (min-width: 901px) {
   .raids-page .raid-hero { padding: 10px 16px; }
   .raids-page .raid-content h2 { font-size: 23px; margin: 4px 0; }
   .raids-page .raid-content .raid-hp { margin: 5px 0; }
@@ -428,7 +428,7 @@
   .raids-page .gym-trail { padding: 8px 12px; }
   .raids-page .gym-trail h2 { font-size: 18px; }
   .raids-page .badge-trail { margin-top: 6px; }
-}
+}}
 
 .raids-page .raid-locked {
   background: var(--hub-deep);
@@ -440,6 +440,6 @@
 .raids-page .raid-locked .eyebrow { color: var(--hub-light); font-size: 8px; }
 .raids-page .raid-locked > img { filter: none; }
 .raids-page .raid-locked .button { min-height: 34px; padding: 8px 12px; font-size: 11px; }
-@media (max-width: 600px) {
+@container game (max-width: 600px) {
   .raids-page .raid-locked h2 { font-size: 20px; }
 }
